@@ -6,10 +6,10 @@
       <Unit>
         <Filename Value="starter_htmlbuilder.lpr"/>
         <IsPartOfProject Value="True"/>
-        <EditorIndex Value="7"/>
+        <EditorIndex Value="8"/>
         <TopLine Value="8"/>
-        <CursorPos X="41" Y="19"/>
-        <UsageCount Value="45"/>
+        <CursorPos X="61" Y="19"/>
+        <UsageCount Value="46"/>
         <Loaded Value="True"/>
       </Unit>
       <Unit>
@@ -18,10 +18,10 @@
         <ComponentName Value="StarterHtmlBuilder"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <EditorIndex Value="3"/>
+        <EditorIndex Value="6"/>
         <TopLine Value="249"/>
         <CursorPos X="50" Y="259"/>
-        <UsageCount Value="45"/>
+        <UsageCount Value="46"/>
         <Loaded Value="True"/>
       </Unit>
       <Unit>
@@ -31,9 +31,9 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <IsVisibleTab Value="True"/>
-        <TopLine Value="380"/>
-        <CursorPos X="47" Y="384"/>
-        <UsageCount Value="45"/>
+        <TopLine Value="400"/>
+        <CursorPos X="44" Y="409"/>
+        <UsageCount Value="46"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
@@ -46,7 +46,7 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="36"/>
         <CursorPos Y="43"/>
-        <UsageCount Value="23"/>
+        <UsageCount Value="24"/>
       </Unit>
       <Unit>
         <Filename Value="preset_frame.pas"/>
@@ -57,7 +57,7 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="35"/>
         <CursorPos X="34" Y="45"/>
-        <UsageCount Value="37"/>
+        <UsageCount Value="38"/>
       </Unit>
       <Unit>
         <Filename Value="menuitem_frame.pas"/>
@@ -66,9 +66,9 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Frame"/>
         <EditorIndex Value="-1"/>
-        <TopLine Value="22"/>
-        <CursorPos X="30" Y="25"/>
-        <UsageCount Value="29"/>
+        <TopLine Value="13"/>
+        <CursorPos X="33" Y="18"/>
+        <UsageCount Value="30"/>
       </Unit>
       <Unit>
         <Filename Value="content_element_frame.pas"/>
@@ -79,7 +79,7 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="69"/>
         <CursorPos Y="82"/>
-        <UsageCount Value="32"/>
+        <UsageCount Value="33"/>
       </Unit>
       <Unit>
         <Filename Value="section_element_frame.pas"/>
@@ -89,7 +89,7 @@
         <ResourceBaseClass Value="Frame"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="19" Y="18"/>
-        <UsageCount Value="30"/>
+        <UsageCount Value="31"/>
       </Unit>
       <Unit>
         <Filename Value="tag_element_frame.pas"/>
@@ -97,10 +97,10 @@
         <ComponentName Value="frmTag_Element"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Frame"/>
-        <EditorIndex Value="2"/>
-        <TopLine Value="27"/>
-        <CursorPos X="36" Y="42"/>
-        <UsageCount Value="29"/>
+        <EditorIndex Value="5"/>
+        <TopLine Value="28"/>
+        <CursorPos Y="29"/>
+        <UsageCount Value="30"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
@@ -113,7 +113,7 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="8"/>
         <CursorPos X="20" Y="15"/>
-        <UsageCount Value="29"/>
+        <UsageCount Value="30"/>
       </Unit>
       <Unit>
         <Filename Value="block_element_frame.pas"/>
@@ -124,7 +124,7 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="26"/>
         <CursorPos Y="41"/>
-        <UsageCount Value="26"/>
+        <UsageCount Value="27"/>
       </Unit>
       <Unit>
         <Filename Value="css_element_frame.pas"/>
@@ -135,7 +135,7 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="29"/>
         <CursorPos X="4" Y="42"/>
-        <UsageCount Value="30"/>
+        <UsageCount Value="31"/>
       </Unit>
       <Unit>
         <Filename Value="js_element_frame.pas"/>
@@ -143,12 +143,10 @@
         <ComponentName Value="frmJs_Element"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Frame"/>
-        <EditorIndex Value="5"/>
+        <EditorIndex Value="-1"/>
         <TopLine Value="8"/>
         <CursorPos X="50" Y="16"/>
-        <UsageCount Value="29"/>
-        <Loaded Value="True"/>
-        <LoadedDesigner Value="True"/>
+        <UsageCount Value="30"/>
       </Unit>
       <Unit>
         <Filename Value="image_element_frame.pas"/>
@@ -159,7 +157,7 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="31"/>
         <CursorPos X="14" Y="46"/>
-        <UsageCount Value="29"/>
+        <UsageCount Value="30"/>
       </Unit>
       <Unit>
         <Filename Value="attachment_element_frame.pas"/>
@@ -170,7 +168,7 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="7"/>
         <CursorPos Y="44"/>
-        <UsageCount Value="29"/>
+        <UsageCount Value="30"/>
       </Unit>
       <Unit>
         <Filename Value="mdi_helpers.pas"/>
@@ -178,7 +176,7 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="6"/>
         <CursorPos X="34" Y="8"/>
-        <UsageCount Value="28"/>
+        <UsageCount Value="29"/>
       </Unit>
       <Unit>
         <Filename Value="block_frame.pas"/>
@@ -189,7 +187,15 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="41"/>
         <CursorPos Y="42"/>
-        <UsageCount Value="24"/>
+        <UsageCount Value="25"/>
+      </Unit>
+      <Unit>
+        <Filename Value="imdichildframe.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="7"/>
+        <CursorPos X="3" Y="11"/>
+        <UsageCount Value="22"/>
+        <Loaded Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="/usr/lib/lazarus/lcl/include/customform.inc"/>
@@ -252,13 +258,11 @@
         <ComponentName Value="frmJs"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Frame"/>
-        <EditorIndex Value="4"/>
+        <EditorIndex Value="-1"/>
         <TopLine Value="50"/>
         <CursorPos Y="64"/>
         <ComponentState Value="1"/>
         <UsageCount Value="11"/>
-        <Loaded Value="True"/>
-        <LoadedDesigner Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="image_frame.pas"/>
@@ -297,10 +301,10 @@
         <ComponentName Value="frmTags"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Frame"/>
-        <EditorIndex Value="1"/>
+        <EditorIndex Value="4"/>
         <TopLine Value="45"/>
-        <CursorPos X="20" Y="52"/>
-        <UsageCount Value="11"/>
+        <CursorPos Y="47"/>
+        <UsageCount Value="12"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
@@ -319,18 +323,21 @@
         <ComponentName Value="frmMenu"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Frame"/>
-        <EditorIndex Value="-1"/>
-        <TopLine Value="30"/>
-        <CursorPos X="32" Y="45"/>
-        <UsageCount Value="10"/>
+        <EditorIndex Value="3"/>
+        <TopLine Value="46"/>
+        <CursorPos Y="66"/>
+        <UsageCount Value="11"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="/usr/lib64/lazarus/lcl/dbctrls.pp"/>
         <UnitName Value="DBCtrls"/>
-        <EditorIndex Value="-1"/>
+        <EditorIndex Value="2"/>
         <TopLine Value="1663"/>
         <CursorPos Y="1670"/>
         <UsageCount Value="10"/>
+        <Loaded Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="content_frame.lrs"/>
@@ -388,134 +395,138 @@
         <DefaultSyntaxHighlighter Value="LFM"/>
       </Unit>
       <Unit>
-        <Filename Value="imdichildframe.pas"/>
+        <Filename Value="menu_element_frame.pas"/>
         <IsPartOfProject Value="True"/>
-        <EditorIndex Value="6"/>
-        <CursorPos X="43" Y="12"/>
+        <ComponentName Value="frmMenu_Element"/>
+        <ResourceBaseClass Value="Frame"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="38"/>
+        <CursorPos X="18" Y="45"/>
         <UsageCount Value="21"/>
         <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
       </Unit>
     </Units>
     <JumpHistory HistoryIndex="29">
       <Position>
-        <Filename Value="child_dialog.pas"/>
-        <Caret Line="87" Column="93" TopLine="69"/>
-      </Position>
-      <Position>
-        <Filename Value="child_dialog.pas"/>
-        <Caret Line="352" Column="35" TopLine="345"/>
-      </Position>
-      <Position>
-        <Filename Value="js_frame.pas"/>
-        <Caret Line="43" Column="35" TopLine="25"/>
-      </Position>
-      <Position>
-        <Filename Value="js_frame.pas"/>
-        <Caret Line="44" Column="35" TopLine="31"/>
-      </Position>
-      <Position>
-        <Filename Value="js_frame.pas"/>
-        <Caret Line="45" Column="35" TopLine="32"/>
-      </Position>
-      <Position>
-        <Filename Value="js_frame.pas"/>
-        <Caret Line="46" Column="35" TopLine="33"/>
-      </Position>
-      <Position>
-        <Filename Value="js_frame.pas"/>
-        <Caret Line="52" Column="35" TopLine="39"/>
-      </Position>
-      <Position>
-        <Filename Value="child_dialog.pas"/>
-        <Caret Line="16" Column="20" TopLine="7"/>
-      </Position>
-      <Position>
-        <Filename Value="js_element_frame.pas"/>
-        <Caret Line="16" Column="18" TopLine="8"/>
-      </Position>
-      <Position>
-        <Filename Value="js_element_frame.pas"/>
-        <Caret Line="34" Column="20" TopLine="15"/>
-      </Position>
-      <Position>
-        <Filename Value="js_element_frame.pas"/>
-        <Caret Line="46" Column="11" TopLine="31"/>
-      </Position>
-      <Position>
-        <Filename Value="htmlbuilder_main_form.pas"/>
-        <Caret Line="259" Column="50" TopLine="249"/>
-      </Position>
-      <Position>
-        <Filename Value="child_dialog.pas"/>
-        <Caret Line="114" TopLine="96"/>
-      </Position>
-      <Position>
-        <Filename Value="child_dialog.pas"/>
-        <Caret Line="267" TopLine="261"/>
-      </Position>
-      <Position>
-        <Filename Value="tag_frame.pas"/>
-        <Caret Line="45" Column="33" TopLine="23"/>
-      </Position>
-      <Position>
-        <Filename Value="tag_frame.pas"/>
-        <Caret Line="46" Column="33" TopLine="33"/>
-      </Position>
-      <Position>
-        <Filename Value="tag_frame.pas"/>
-        <Caret Line="47" Column="33" TopLine="34"/>
-      </Position>
-      <Position>
-        <Filename Value="tag_frame.pas"/>
-        <Caret Line="53" Column="33" TopLine="40"/>
-      </Position>
-      <Position>
-        <Filename Value="tag_frame.pas"/>
-        <Caret Line="46" Column="56" TopLine="40"/>
-      </Position>
-      <Position>
-        <Filename Value="tag_frame.pas"/>
-        <Caret Line="47" Column="56" TopLine="41"/>
-      </Position>
-      <Position>
-        <Filename Value="tag_frame.pas"/>
-        <Caret Line="40" Column="19" TopLine="36"/>
-      </Position>
-      <Position>
-        <Filename Value="tag_element_frame.pas"/>
-        <Caret Line="21" Column="25" TopLine="21"/>
-      </Position>
-      <Position>
-        <Filename Value="tag_element_frame.pas"/>
-        <Caret Line="22" Column="25" TopLine="22"/>
-      </Position>
-      <Position>
-        <Filename Value="tag_element_frame.pas"/>
-        <Caret Line="23" Column="26" TopLine="22"/>
-      </Position>
-      <Position>
-        <Filename Value="tag_element_frame.pas"/>
-        <Caret Line="24" Column="38" TopLine="22"/>
-      </Position>
-      <Position>
-        <Filename Value="js_element_frame.pas"/>
-        <Caret Line="16" Column="50" TopLine="8"/>
-      </Position>
-      <Position>
-        <Filename Value="child_dialog.pas"/>
-        <Caret Line="388" Column="33" TopLine="372"/>
-      </Position>
-      <Position>
-        <Filename Value="child_dialog.pas"/>
-        <Caret Line="16" Column="40" TopLine="11"/>
-      </Position>
-      <Position>
-        <Filename Value="tag_element_frame.pas"/>
-        <Caret Line="31" Column="24" TopLine="10"/>
-      </Position>
-      <Position>
         <Filename Value="tag_element_frame.pas"/>
         <Caret Line="42" Column="17" TopLine="35"/>
+      </Position>
+      <Position>
+        <Filename Value="menu_frame.pas"/>
+        <Caret Line="32" Column="57" TopLine="30"/>
+      </Position>
+      <Position>
+        <Filename Value="menu_frame.pas"/>
+        <Caret Line="33" Column="57" TopLine="31"/>
+      </Position>
+      <Position>
+        <Filename Value="menu_frame.pas"/>
+        <Caret Line="34" Column="57" TopLine="32"/>
+      </Position>
+      <Position>
+        <Filename Value="menu_frame.pas"/>
+        <Caret Line="35" Column="57" TopLine="33"/>
+      </Position>
+      <Position>
+        <Filename Value="menu_frame.pas"/>
+        <Caret Line="37" Column="57" TopLine="35"/>
+      </Position>
+      <Position>
+        <Filename Value="menu_frame.pas"/>
+        <Caret Line="59" Column="36" TopLine="40"/>
+      </Position>
+      <Position>
+        <Filename Value="menu_frame.pas"/>
+        <Caret Line="48" Column="4" TopLine="37"/>
+      </Position>
+      <Position>
+        <Filename Value="child_dialog.pas"/>
+        <Caret Line="17" Column="4" TopLine="10"/>
+      </Position>
+      <Position>
+        <Filename Value="menu_element_frame.pas"/>
+        <Caret Line="6" Column="43" TopLine="2"/>
+      </Position>
+      <Position>
+        <Filename Value="child_dialog.pas"/>
+        <Caret Line="17" Column="22"/>
+      </Position>
+      <Position>
+        <Filename Value="menu_element_frame.pas"/>
+        <Caret Line="21" Column="17" TopLine="2"/>
+      </Position>
+      <Position>
+        <Filename Value="menu_element_frame.pas"/>
+        <Caret Line="32" Column="34" TopLine="15"/>
+      </Position>
+      <Position>
+        <Filename Value="menu_element_frame.pas"/>
+        <Caret Line="31" Column="3" TopLine="24"/>
+      </Position>
+      <Position>
+        <Filename Value="menu_element_frame.pas"/>
+        <Caret Line="32" Column="3" TopLine="25"/>
+      </Position>
+      <Position>
+        <Filename Value="menu_element_frame.pas"/>
+        <Caret Line="33" Column="3" TopLine="26"/>
+      </Position>
+      <Position>
+        <Filename Value="menu_element_frame.pas"/>
+        <Caret Line="34" Column="3" TopLine="27"/>
+      </Position>
+      <Position>
+        <Filename Value="menu_element_frame.pas"/>
+        <Caret Line="35" Column="3" TopLine="28"/>
+      </Position>
+      <Position>
+        <Filename Value="menu_element_frame.pas"/>
+        <Caret Line="36" Column="3" TopLine="29"/>
+      </Position>
+      <Position>
+        <Filename Value="menu_element_frame.pas"/>
+        <Caret Line="37" Column="3" TopLine="30"/>
+      </Position>
+      <Position>
+        <Filename Value="menu_element_frame.pas"/>
+        <Caret Line="38" Column="3" TopLine="31"/>
+      </Position>
+      <Position>
+        <Filename Value="menu_element_frame.pas"/>
+        <Caret Line="39" Column="3" TopLine="32"/>
+      </Position>
+      <Position>
+        <Filename Value="menu_element_frame.pas"/>
+        <Caret Line="40" Column="3" TopLine="33"/>
+      </Position>
+      <Position>
+        <Filename Value="menu_element_frame.pas"/>
+        <Caret Line="41" Column="3" TopLine="34"/>
+      </Position>
+      <Position>
+        <Filename Value="menu_element_frame.pas"/>
+        <Caret Line="42" Column="3" TopLine="35"/>
+      </Position>
+      <Position>
+        <Filename Value="menu_element_frame.pas"/>
+        <Caret Line="43" Column="3" TopLine="36"/>
+      </Position>
+      <Position>
+        <Filename Value="menu_element_frame.pas"/>
+        <Caret Line="42" Column="3" TopLine="35"/>
+      </Position>
+      <Position>
+        <Filename Value="menu_element_frame.pas"/>
+        <Caret Line="43" Column="3" TopLine="36"/>
+      </Position>
+      <Position>
+        <Filename Value="menu_element_frame.pas"/>
+        <Caret Line="44" Column="3" TopLine="37"/>
+      </Position>
+      <Position>
+        <Filename Value="menu_element_frame.pas"/>
+        <Caret Line="45" Column="18" TopLine="38"/>
       </Position>
     </JumpHistory>
     <RunParams>

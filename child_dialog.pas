@@ -14,6 +14,7 @@ uses
   content_element_frame, attachment_frame,
   css_element_frame, image_element_frame,
   js_element_frame,  tag_element_frame,
+  menu_element_frame,
   SQLite3Conn, SQLDB, db_helpers ;
 
 type
@@ -88,6 +89,7 @@ var
   frmImage_Element : TfrmImage_Element; // фрейм с одним изображением
   frmJs_Element : TfrmJs_Element; // фрейм с одним скриптом
   frmTag_Element : TfrmTag_Element; // фрейм с одним тегом
+  frmMenu_Element : TfrmMenu_Element; // фрейм с одним меню
 
 
 begin
@@ -391,6 +393,23 @@ begin
     frmTag_Element.sqlTag_Element);
     frmTag_Element.sqlTag_Element.Active := True;
     frmTag_Element.dsTag_Element.AutoEdit := True;
+
+  end;
+
+
+                            { 20 Окно для меню }
+  if strTypeOfFrame = 'menu_element' then
+  begin
+
+    frmMenu_Element := TfrmMenu_Element.Create(Self);
+    frmMenu_Element.Parent := Self;
+    frmMenu_Element.Align := alClient;
+    frmMenu_Element.conn.DatabaseName := DatabaseName;
+    frmMenu_Element.setFileName(DatabaseName);
+    open_sql('select * from menu where menu_id="' +id_of_element+ '"',
+    frmMenu_Element.sqlMenu_Element);
+    frmMenu_Element.sqlMenu_Element.Active := True;
+    frmMenu_Element.dsMenu_Element.AutoEdit := True;
 
   end;
 

@@ -36,6 +36,7 @@ object frmMenu: TfrmMenu
     Color = clWindow
     Columns = <>
     DataSource = dsMenu
+    PopupMenu = pmMenu
     TabOrder = 1
   end
   object dsMenu: TDataSource
@@ -70,5 +71,20 @@ object frmMenu: TfrmMenu
     Macros = <>
     Left = 78
     Top = 104
+  end
+  object aclMenu: TActionList
+    Left = 346
+    Top = 47
+    object acMenuItem_Element: TAction
+      Caption = 'Открыть меню'
+      OnExecute = acMenuItem_ElementExecute
+    end
+  end
+  object pmMenu: TPopupMenu
+    Left = 260
+    Top = 15
+    object mnuOpenMenuItem_Element: TMenuItem
+      Action = acMenuItem_Element
+    end
   end
 end

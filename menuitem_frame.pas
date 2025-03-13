@@ -6,13 +6,13 @@ interface
 
 uses
   Classes, SysUtils, DB, SQLite3Conn, SQLDB, LResources, Forms, Controls,
-  DBCtrls, DBGrids;
+  DBCtrls, DBGrids, imdichildframe;
 
 type
 
   { TfrmMenu_Item }
 
-  TfrmMenu_Item = class(TFrame)
+  TfrmMenu_Item = class(TFrame, IMDI_Child_Frame)
     conn: TSQLite3Connection;
     dbgMenuItem: TDBGrid;
     dbNav_MenuItem: TDBNavigator;

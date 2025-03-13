@@ -163,6 +163,12 @@
         <Filename Value="imdichildframe.pas"/>
         <IsPartOfProject Value="True"/>
       </Unit>
+      <Unit>
+        <Filename Value="menu_element_frame.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmMenu_Element"/>
+        <ResourceBaseClass Value="Frame"/>
+      </Unit>
     </Units>
   </ProjectOptions>
   <CompilerOptions>
