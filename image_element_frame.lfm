@@ -1,0 +1,151 @@
+object frmImage_Element: TfrmImage_Element
+  Left = 0
+  Height = 537
+  Top = 0
+  Width = 816
+  ClientHeight = 537
+  ClientWidth = 816
+  TabOrder = 0
+  DesignLeft = 435
+  DesignTop = 138
+  object panImageView: TPanel
+    Left = 0
+    Height = 537
+    Top = 0
+    Width = 816
+    Align = alClient
+    ClientHeight = 537
+    ClientWidth = 816
+    TabOrder = 0
+    object lbImageId: TLabel
+      Left = 1
+      Height = 17
+      Top = 1
+      Width = 814
+      Align = alTop
+      Caption = 'ID изображения'
+      ParentColor = False
+    end
+    object dbeImageId: TDBEdit
+      Left = 1
+      Height = 25
+      Top = 18
+      Width = 814
+      DataField = 'image_id'
+      DataSource = dsImage_Element
+      Align = alTop
+      MaxLength = 0
+      TabOrder = 0
+    end
+    object lbImageCaption: TLabel
+      Left = 1
+      Height = 17
+      Top = 43
+      Width = 814
+      Align = alTop
+      Caption = 'Название изображения'
+      ParentColor = False
+    end
+    object dbeImageCaption: TDBEdit
+      Left = 1
+      Height = 25
+      Top = 60
+      Width = 814
+      DataField = 'image_caption'
+      DataSource = dsImage_Element
+      Align = alTop
+      MaxLength = 0
+      TabOrder = 1
+    end
+    object lbImageData: TLabel
+      Left = 1
+      Height = 17
+      Top = 85
+      Width = 814
+      Align = alTop
+      Caption = 'Изображение'
+      ParentColor = False
+    end
+    object dbNav_Images: TDBNavigator
+      Left = 1
+      Height = 25
+      Top = 511
+      Width = 814
+      Align = alBottom
+      BevelOuter = bvNone
+      ChildSizing.EnlargeHorizontal = crsScaleChilds
+      ChildSizing.EnlargeVertical = crsScaleChilds
+      ChildSizing.ShrinkHorizontal = crsScaleChilds
+      ChildSizing.ShrinkVertical = crsScaleChilds
+      ChildSizing.Layout = cclLeftToRightThenTopToBottom
+      ChildSizing.ControlsPerLine = 100
+      ClientHeight = 25
+      ClientWidth = 814
+      DataSource = dsImage_Element
+      Options = []
+      TabOrder = 2
+    end
+    object panImageActions: TPanel
+      Left = 1
+      Height = 50
+      Top = 461
+      Width = 814
+      Align = alBottom
+      ClientHeight = 50
+      ClientWidth = 814
+      TabOrder = 3
+      object btnSetImage: TButton
+        Left = 1
+        Height = 48
+        Top = 1
+        Width = 239
+        Align = alLeft
+        Caption = 'Выбрать изображение...'
+        TabOrder = 0
+      end
+    end
+    object dbImage: TDBImage
+      Left = 1
+      Height = 359
+      Top = 102
+      Width = 814
+      Align = alClient
+      AutoSize = True
+      Center = True
+      DataField = 'image_data'
+      DataSource = dsImage_Element
+      Proportional = True
+      Stretch = True
+    end
+  end
+  object dsImage_Element: TDataSource
+    DataSet = sqlImage_Element
+    Left = 400
+    Top = 470
+  end
+  object sqlImage_Element: TSQLQuery
+    FieldDefs = <>
+    Database = conn
+    Transaction = trans
+    Params = <>
+    Macros = <>
+    Left = 445
+    Top = 468
+  end
+  object trans: TSQLTransaction
+    Active = False
+    Database = conn
+    Left = 499
+    Top = 476
+  end
+  object conn: TSQLite3Connection
+    Connected = True
+    LoginPrompt = False
+    DatabaseName = '/home/artem/STARTER_HTMLBUILDER/sqlite.db'
+    KeepConnection = False
+    Transaction = trans
+    AlwaysUseBigint = False
+    Left = 569
+    Top = 481
+  end
+end

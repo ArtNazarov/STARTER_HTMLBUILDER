@@ -1,0 +1,179 @@
+object Frame3: TFrame3
+  Left = 0
+  Height = 569
+  Top = 0
+  Width = 974
+  ClientHeight = 569
+  ClientWidth = 974
+  TabOrder = 0
+  DesignLeft = 435
+  DesignTop = 138
+  object Panel19: TPanel
+    Left = 0
+    Height = 569
+    Top = 0
+    Width = 974
+    Align = alClient
+    ClientHeight = 569
+    ClientWidth = 974
+    TabOrder = 0
+    object Label13: TLabel
+      Left = 1
+      Height = 17
+      Top = 1
+      Width = 972
+      Align = alTop
+      Caption = 'ID раздела'
+      ParentColor = False
+    end
+    object dbeSectionId: TDBEdit
+      Left = 1
+      Height = 25
+      Top = 18
+      Width = 972
+      DataField = 'id'
+      Align = alTop
+      MaxLength = 0
+      TabOrder = 0
+    end
+    object Label14: TLabel
+      Left = 1
+      Height = 17
+      Top = 43
+      Width = 972
+      Align = alTop
+      Caption = 'Название раздела'
+      ParentColor = False
+    end
+    object dbeSectionCaption: TDBEdit
+      Left = 1
+      Height = 25
+      Top = 60
+      Width = 972
+      DataField = 'section'
+      Align = alTop
+      MaxLength = 0
+      TabOrder = 1
+    end
+    object Label15: TLabel
+      Left = 1
+      Height = 17
+      Top = 152
+      Width = 972
+      Align = alTop
+      Caption = 'Примечания к разделу'
+      ParentColor = False
+    end
+    object dbmSectionNote: TDBMemo
+      Left = 1
+      Height = 110
+      Top = 169
+      Width = 972
+      Align = alTop
+      DataField = 'note'
+      TabOrder = 2
+    end
+    object Label16: TLabel
+      Left = 1
+      Height = 17
+      Top = 501
+      Width = 972
+      Align = alBottom
+      Caption = 'Пресет'
+      ParentColor = False
+    end
+    object dbNav_Sections: TDBNavigator
+      Left = 1
+      Height = 25
+      Top = 518
+      Width = 972
+      Align = alBottom
+      BevelOuter = bvNone
+      ChildSizing.EnlargeHorizontal = crsScaleChilds
+      ChildSizing.EnlargeVertical = crsScaleChilds
+      ChildSizing.ShrinkHorizontal = crsScaleChilds
+      ChildSizing.ShrinkVertical = crsScaleChilds
+      ChildSizing.Layout = cclLeftToRightThenTopToBottom
+      ChildSizing.ControlsPerLine = 100
+      ClientHeight = 25
+      ClientWidth = 972
+      Options = []
+      TabOrder = 3
+    end
+    object choicePreset: TDBLookupComboBox
+      Left = 1
+      Height = 25
+      Top = 543
+      Width = 972
+      Align = alBottom
+      DataField = 'preset'
+      KeyField = 'id'
+      ListField = 'sitename'
+      ListFieldIndex = 0
+      LookupCache = False
+      TabOrder = 4
+    end
+    object dbmSectionFullText: TDBMemo
+      Left = 1
+      Height = 152
+      Top = 349
+      Width = 972
+      Align = alClient
+      DataField = 'full_text'
+      TabOrder = 5
+    end
+    object lbSpecification: TLabel
+      Left = 1
+      Height = 17
+      Top = 304
+      Width = 972
+      Align = alTop
+      Caption = 'Полное описание'
+      ParentColor = False
+    end
+    object btnEditorForSectionNote: TButton
+      Left = 1
+      Height = 25
+      Top = 279
+      Width = 972
+      Align = alTop
+      TabOrder = 6
+    end
+    object btnEditorForSectionFullText: TButton
+      Left = 1
+      Height = 28
+      Top = 321
+      Width = 972
+      Align = alTop
+      TabOrder = 7
+    end
+    object lbTree: TLabel
+      Left = 1
+      Height = 17
+      Top = 85
+      Width = 972
+      Align = alTop
+      Caption = 'Иерархия (section1/section2)'
+      ParentColor = False
+    end
+    object dbeTree: TDBEdit
+      Left = 1
+      Height = 25
+      Top = 102
+      Width = 972
+      DataField = 'tree'
+      Align = alTop
+      MaxLength = 0
+      TabOrder = 8
+    end
+    object btnRefreshTree: TButton
+      Left = 1
+      Height = 25
+      Top = 127
+      Width = 972
+      Align = alTop
+      Caption = 'Перестроить дерево'
+      TabOrder = 9
+    end
+  end
+end

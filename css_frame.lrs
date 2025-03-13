@@ -1,0 +1,31 @@
+{ This is an automatically generated lazarus resource file }
+
+LazarusResources.Add('TfrmCss_Styles','FORMDATA',[
+  'TPF0'#14'TfrmCss_Styles'#13'frmCss_Styles'#4'Left'#2#0#6'Height'#3#240#0#3'T'
+  +'op'#2#0#5'Width'#3'@'#1#12'ClientHeight'#3#240#0#11'ClientWidth'#3'@'#1#8'T'
+  +'abOrder'#2#0#10'DesignLeft'#3#17#2#9'DesignTop'#3'n'#1#0#7'TDBGrid'#13'dbgC'
+  +'ss_Styles'#4'Left'#2#0#6'Height'#3#215#0#3'Top'#2#0#5'Width'#3'@'#1#5'Align'
+  +#7#8'alClient'#5'Color'#7#8'clWindow'#7'Columns'#14#0#10'DataSource'#7#12'ds'
+  +'Css_Styles'#9'PopupMenu'#7#12'pmCss_Styles'#8'TabOrder'#2#0#0#0#12'TDBNavig'
+  +'ator'#16'dbNav_Css_Styles'#4'Left'#2#0#6'Height'#2#25#3'Top'#3#215#0#5'Widt'
+  +'h'#3'@'#1#5'Align'#7#8'alBottom'#10'BevelOuter'#7#6'bvNone'#29'ChildSizing.'
+  +'EnlargeHorizontal'#7#14'crsScaleChilds'#27'ChildSizing.EnlargeVertical'#7#14
+  +'crsScaleChilds'#28'ChildSizing.ShrinkHorizontal'#7#14'crsScaleChilds'#26'Ch'
+  +'ildSizing.ShrinkVertical'#7#14'crsScaleChilds'#18'ChildSizing.Layout'#7#29
+  +'cclLeftToRightThenTopToBottom'#27'ChildSizing.ControlsPerLine'#2'd'#12'Clie'
+  +'ntHeight'#2#25#11'ClientWidth'#3'@'#1#10'DataSource'#7#12'dsCss_Styles'#7'O'
+  +'ptions'#11#0#8'TabOrder'#2#1#0#0#11'TDataSource'#12'dsCss_Styles'#7'DataSet'
+  +#7#13'sqlCss_Styles'#4'Left'#3#2#1#3'Top'#2#20#0#0#9'TSQLQuery'#13'sqlCss_St'
+  +'yles'#9'FieldDefs'#14#0#8'Database'#7#4'conn'#11'Transaction'#7#5'trans'#6
+  +'Params'#14#0#6'Macros'#14#0#4'Left'#3#10#1#3'Top'#2'@'#0#0#15'TSQLTransacti'
+  +'on'#5'trans'#6'Active'#8#8'Database'#7#4'conn'#4'Left'#3#22#1#3'Top'#2'h'#0
+  +#0#18'TSQLite3Connection'#4'conn'#9'Connected'#9#11'LoginPrompt'#8#12'Databa'
+  +'seName'#6')/home/artem/STARTER_HTMLBUILDER/sqlite.db'#14'KeepConnection'#8
+  +#11'Transaction'#7#5'trans'#15'AlwaysUseBigint'#8#4'Left'#3#3#1#3'Top'#3#144
+  +#0#0#0#11'TActionList'#13'aclCss_Styles'#4'Left'#3#148#0#3'Top'#2'('#0#7'TAc'
+  +'tion'#15'acOpenCss_Style'#7'Caption'#6#25#208#158#209#130#208#186#209#128
+  +#209#139#209#130#209#140' '#209#129#209#130#208#184#208#187#209#140#9'OnExec'
+  +'ute'#7#22'acOpenCss_StyleExecute'#0#0#0#10'TPopupMenu'#12'pmCss_Styles'#4'L'
+  +'eft'#2'q'#3'Top'#2'r'#0#9'TMenuItem'#16'mnuOpenCss_Style'#6'Action'#7#15'ac'
+  +'OpenCss_Style'#0#0#0#0
+]);

@@ -1,0 +1,31 @@
+{ This is an automatically generated lazarus resource file }
+
+LazarusResources.Add('TfrmBlocks','FORMDATA',[
+  'TPF0'#10'TfrmBlocks'#9'frmBlocks'#4'Left'#2#0#6'Height'#3#240#0#3'Top'#2#0#5
+  +'Width'#3'@'#1#12'ClientHeight'#3#240#0#11'ClientWidth'#3'@'#1#8'TabOrder'#2
+  +#0#10'DesignLeft'#3#243#1#9'DesignTop'#3#142#0#0#12'TDBNavigator'#12'dbNav_B'
+  +'locks'#4'Left'#2#0#6'Height'#2#25#3'Top'#3#215#0#5'Width'#3'@'#1#5'Align'#7
+  +#8'alBottom'#10'BevelOuter'#7#6'bvNone'#29'ChildSizing.EnlargeHorizontal'#7
+  +#14'crsScaleChilds'#27'ChildSizing.EnlargeVertical'#7#14'crsScaleChilds'#28
+  +'ChildSizing.ShrinkHorizontal'#7#14'crsScaleChilds'#26'ChildSizing.ShrinkVer'
+  +'tical'#7#14'crsScaleChilds'#18'ChildSizing.Layout'#7#29'cclLeftToRightThenT'
+  +'opToBottom'#27'ChildSizing.ControlsPerLine'#2'd'#12'ClientHeight'#2#25#11'C'
+  +'lientWidth'#3'@'#1#10'DataSource'#7#8'dsBlocks'#7'Options'#11#0#8'TabOrder'
+  +#2#0#0#0#7'TDBGrid'#9'dbgBlocks'#4'Left'#2#0#6'Height'#3#215#0#3'Top'#2#0#5
+  +'Width'#3'@'#1#5'Align'#7#8'alClient'#5'Color'#7#8'clWindow'#7'Columns'#14#0
+  +#10'DataSource'#7#8'dsBlocks'#9'PopupMenu'#7#8'ppBlocks'#8'TabOrder'#2#1#0#0
+  +#11'TDataSource'#8'dsBlocks'#7'DataSet'#7#9'sqlBlocks'#4'Left'#2'<'#3'Top'#3
+  +#132#0#0#0#18'TSQLite3Connection'#4'conn'#9'Connected'#9#11'LoginPrompt'#8#12
+  +'DatabaseName'#6')/home/artem/STARTER_HTMLBUILDER/sqlite.db'#14'KeepConnecti'
+  +'on'#9#11'Transaction'#7#5'trans'#15'AlwaysUseBigint'#8#4'Left'#2'C'#3'Top'#3
+  +#212#0#0#0#15'TSQLTransaction'#5'trans'#6'Active'#8#8'Database'#7#4'conn'#4
+  +'Left'#2'q'#3'Top'#3#212#0#0#0#9'TSQLQuery'#9'sqlBlocks'#9'FieldDefs'#14#0#8
+  +'Database'#7#4'conn'#11'Transaction'#7#5'trans'#11'SQL.Strings'#1#6#21'SELEC'
+  +'T * FROM content'#0#6'Params'#14#0#6'Macros'#14#0#4'Left'#2'j'#3'Top'#3#132
+  +#0#0#0#11'TActionList'#9'aclBlocks'#4'Left'#3#219#0#3'Top'#2'$'#0#7'TAction'
+  +#19'acOpenBlock_Element'#7'Caption'#6#23#208#158#209#130#208#186#209#128#209
+  +#139#209#130#209#140' '#208#177#208#187#208#190#208#186#9'OnExecute'#7#26'ac'
+  +'OpenBlock_ElementExecute'#0#0#0#10'TPopupMenu'#8'ppBlocks'#4'Left'#2'e'#3'T'
+  +'op'#2'<'#0#9'TMenuItem'#20'mnuOpenBlock_Element'#6'Action'#7#19'acOpenBlock'
+  +'_Element'#0#0#0#0
+]);

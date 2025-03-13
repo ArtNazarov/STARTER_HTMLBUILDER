@@ -1,0 +1,87 @@
+object frmCss_Styles: TfrmCss_Styles
+  Left = 0
+  Height = 240
+  Top = 0
+  Width = 320
+  ClientHeight = 240
+  ClientWidth = 320
+  TabOrder = 0
+  DesignLeft = 529
+  DesignTop = 366
+  object dbgCss_Styles: TDBGrid
+    Left = 0
+    Height = 215
+    Top = 0
+    Width = 320
+    Align = alClient
+    Color = clWindow
+    Columns = <>
+    DataSource = dsCss_Styles
+    PopupMenu = pmCss_Styles
+    TabOrder = 0
+  end
+  object dbNav_Css_Styles: TDBNavigator
+    Left = 0
+    Height = 25
+    Top = 215
+    Width = 320
+    Align = alBottom
+    BevelOuter = bvNone
+    ChildSizing.EnlargeHorizontal = crsScaleChilds
+    ChildSizing.EnlargeVertical = crsScaleChilds
+    ChildSizing.ShrinkHorizontal = crsScaleChilds
+    ChildSizing.ShrinkVertical = crsScaleChilds
+    ChildSizing.Layout = cclLeftToRightThenTopToBottom
+    ChildSizing.ControlsPerLine = 100
+    ClientHeight = 25
+    ClientWidth = 320
+    DataSource = dsCss_Styles
+    Options = []
+    TabOrder = 1
+  end
+  object dsCss_Styles: TDataSource
+    DataSet = sqlCss_Styles
+    Left = 258
+    Top = 20
+  end
+  object sqlCss_Styles: TSQLQuery
+    FieldDefs = <>
+    Database = conn
+    Transaction = trans
+    Params = <>
+    Macros = <>
+    Left = 266
+    Top = 64
+  end
+  object trans: TSQLTransaction
+    Active = False
+    Database = conn
+    Left = 278
+    Top = 104
+  end
+  object conn: TSQLite3Connection
+    Connected = True
+    LoginPrompt = False
+    DatabaseName = '/home/artem/STARTER_HTMLBUILDER/sqlite.db'
+    KeepConnection = False
+    Transaction = trans
+    AlwaysUseBigint = False
+    Left = 259
+    Top = 144
+  end
+  object aclCss_Styles: TActionList
+    Left = 148
+    Top = 40
+    object acOpenCss_Style: TAction
+      Caption = 'Открыть стиль'
+      OnExecute = acOpenCss_StyleExecute
+    end
+  end
+  object pmCss_Styles: TPopupMenu
+    Left = 113
+    Top = 114
+    object mnuOpenCss_Style: TMenuItem
+      Action = acOpenCss_Style
+    end
+  end
+end

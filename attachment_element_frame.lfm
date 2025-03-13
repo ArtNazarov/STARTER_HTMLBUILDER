@@ -1,0 +1,147 @@
+object frmAttachment_Element: TfrmAttachment_Element
+  Left = 0
+  Height = 591
+  Top = 0
+  Width = 940
+  ClientHeight = 591
+  ClientWidth = 940
+  TabOrder = 0
+  DesignLeft = 435
+  DesignTop = 138
+  object panAttachmentForm: TPanel
+    Left = 0
+    Height = 591
+    Top = 0
+    Width = 940
+    Align = alClient
+    ClientHeight = 591
+    ClientWidth = 940
+    TabOrder = 0
+    object lbAttachmentId: TLabel
+      Left = 1
+      Height = 17
+      Top = 1
+      Width = 938
+      Align = alTop
+      Caption = 'ID документа'
+      ParentColor = False
+    end
+    object dbeAttachmentId: TDBEdit
+      Left = 1
+      Height = 25
+      Top = 18
+      Width = 938
+      DataField = 'attachment_id'
+      DataSource = dsAttachment_Element
+      Align = alTop
+      MaxLength = 0
+      TabOrder = 0
+    end
+    object lbAttachmentCaption: TLabel
+      Left = 1
+      Height = 17
+      Top = 43
+      Width = 938
+      Align = alTop
+      Caption = 'Название файла'
+      ParentColor = False
+    end
+    object dbeAttachmentCaption: TDBEdit
+      Left = 1
+      Height = 25
+      Top = 60
+      Width = 938
+      DataField = 'attachment_caption'
+      DataSource = dsAttachment_Element
+      Align = alTop
+      MaxLength = 0
+      TabOrder = 1
+    end
+    object panAttachmentsActions: TPanel
+      Left = 1
+      Height = 72
+      Top = 493
+      Width = 938
+      Align = alBottom
+      ClientHeight = 72
+      ClientWidth = 938
+      TabOrder = 2
+      object btnSetAttachment: TButton
+        Left = 1
+        Height = 70
+        Top = 1
+        Width = 287
+        Align = alLeft
+        Caption = 'Записать файл в базу...'
+        TabOrder = 0
+      end
+      object btnGetAttachment: TButton
+        Left = 288
+        Height = 70
+        Top = 1
+        Width = 296
+        Align = alLeft
+        Caption = 'Извлечь из базы файл...'
+        TabOrder = 1
+      end
+    end
+    object dbNav_Attachments: TDBNavigator
+      Left = 1
+      Height = 25
+      Top = 565
+      Width = 938
+      Align = alBottom
+      BevelOuter = bvNone
+      ChildSizing.EnlargeHorizontal = crsScaleChilds
+      ChildSizing.EnlargeVertical = crsScaleChilds
+      ChildSizing.ShrinkHorizontal = crsScaleChilds
+      ChildSizing.ShrinkVertical = crsScaleChilds
+      ChildSizing.Layout = cclLeftToRightThenTopToBottom
+      ChildSizing.ControlsPerLine = 100
+      ClientHeight = 25
+      ClientWidth = 938
+      DataSource = dsAttachment_Element
+      Options = []
+      TabOrder = 3
+    end
+    object lbIsFileUploaded: TLabel
+      Left = 1
+      Height = 17
+      Top = 85
+      Width = 938
+      Align = alTop
+      Caption = 'Статус загрузки'
+      ParentColor = False
+    end
+  end
+  object conn: TSQLite3Connection
+    Connected = True
+    LoginPrompt = False
+    DatabaseName = '/home/artem/STARTER_HTMLBUILDER/sqlite.db'
+    KeepConnection = False
+    Transaction = trans
+    AlwaysUseBigint = False
+    Left = 504
+    Top = 163
+  end
+  object sqlAttachment_Element: TSQLQuery
+    FieldDefs = <>
+    Database = conn
+    Transaction = trans
+    Params = <>
+    Macros = <>
+    Left = 506
+    Top = 123
+  end
+  object trans: TSQLTransaction
+    Active = False
+    Database = conn
+    Left = 562
+    Top = 123
+  end
+  object dsAttachment_Element: TDataSource
+    DataSet = sqlAttachment_Element
+    Left = 564
+    Top = 166
+  end
+end

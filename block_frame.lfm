@@ -1,0 +1,90 @@
+object frmBlocks: TfrmBlocks
+  Left = 0
+  Height = 240
+  Top = 0
+  Width = 320
+  ClientHeight = 240
+  ClientWidth = 320
+  TabOrder = 0
+  DesignLeft = 499
+  DesignTop = 142
+  object dbNav_Blocks: TDBNavigator
+    Left = 0
+    Height = 25
+    Top = 215
+    Width = 320
+    Align = alBottom
+    BevelOuter = bvNone
+    ChildSizing.EnlargeHorizontal = crsScaleChilds
+    ChildSizing.EnlargeVertical = crsScaleChilds
+    ChildSizing.ShrinkHorizontal = crsScaleChilds
+    ChildSizing.ShrinkVertical = crsScaleChilds
+    ChildSizing.Layout = cclLeftToRightThenTopToBottom
+    ChildSizing.ControlsPerLine = 100
+    ClientHeight = 25
+    ClientWidth = 320
+    DataSource = dsBlocks
+    Options = []
+    TabOrder = 0
+  end
+  object dbgBlocks: TDBGrid
+    Left = 0
+    Height = 215
+    Top = 0
+    Width = 320
+    Align = alClient
+    Color = clWindow
+    Columns = <>
+    DataSource = dsBlocks
+    PopupMenu = ppBlocks
+    TabOrder = 1
+  end
+  object dsBlocks: TDataSource
+    DataSet = sqlBlocks
+    Left = 60
+    Top = 132
+  end
+  object conn: TSQLite3Connection
+    Connected = True
+    LoginPrompt = False
+    DatabaseName = '/home/artem/STARTER_HTMLBUILDER/sqlite.db'
+    KeepConnection = True
+    Transaction = trans
+    AlwaysUseBigint = False
+    Left = 67
+    Top = 212
+  end
+  object trans: TSQLTransaction
+    Active = False
+    Database = conn
+    Left = 113
+    Top = 212
+  end
+  object sqlBlocks: TSQLQuery
+    FieldDefs = <>
+    Database = conn
+    Transaction = trans
+    SQL.Strings = (
+      'SELECT * FROM content'
+    )
+    Params = <>
+    Macros = <>
+    Left = 106
+    Top = 132
+  end
+  object aclBlocks: TActionList
+    Left = 219
+    Top = 36
+    object acOpenBlock_Element: TAction
+      Caption = 'Открыть блок'
+      OnExecute = acOpenBlock_ElementExecute
+    end
+  end
+  object ppBlocks: TPopupMenu
+    Left = 101
+    Top = 60
+    object mnuOpenBlock_Element: TMenuItem
+      Action = acOpenBlock_Element
+    end
+  end
+end

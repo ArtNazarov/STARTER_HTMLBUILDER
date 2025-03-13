@@ -1,0 +1,46 @@
+{ This is an automatically generated lazarus resource file }
+
+LazarusResources.Add('TfrmJs_Element','FORMDATA',[
+  'TPF0'#14'TfrmJs_Element'#13'frmJs_Element'#4'Left'#2#0#6'Height'#3#25#2#3'To'
+  +'p'#2#0#5'Width'#3#226#2#12'ClientHeight'#3#25#2#11'ClientWidth'#3#226#2#8'T'
+  +'abOrder'#2#0#10'DesignLeft'#3'u'#1#9'DesignTop'#3#164#0#0#6'TPanel'#10'panJ'
+  +'sProps'#4'Left'#2#0#6'Height'#3#25#2#3'Top'#2#0#5'Width'#3#226#2#5'Align'#7
+  +#8'alClient'#7'Caption'#6#10'panJsProps'#12'ClientHeight'#3#25#2#11'ClientWi'
+  +'dth'#3#226#2#8'TabOrder'#2#0#0#12'TDBNavigator'#15'dbNav_JsScripts'#4'Left'
+  +#2#1#6'Height'#2#25#3'Top'#3#255#1#5'Width'#3#224#2#5'Align'#7#8'alBottom'#10
+  +'BevelOuter'#7#6'bvNone'#29'ChildSizing.EnlargeHorizontal'#7#14'crsScaleChil'
+  +'ds'#27'ChildSizing.EnlargeVertical'#7#14'crsScaleChilds'#28'ChildSizing.Shr'
+  +'inkHorizontal'#7#14'crsScaleChilds'#26'ChildSizing.ShrinkVertical'#7#14'crs'
+  +'ScaleChilds'#18'ChildSizing.Layout'#7#29'cclLeftToRightThenTopToBottom'#27
+  +'ChildSizing.ControlsPerLine'#2'd'#12'ClientHeight'#2#25#11'ClientWidth'#3
+  +#224#2#10'DataSource'#7#12'dsJs_Element'#7'Options'#11#0#8'TabOrder'#2#0#0#0
+  +#6'TLabel'#12'lbJsScriptId'#4'Left'#2#1#6'Height'#2#17#3'Top'#2#1#5'Width'#3
+  +#224#2#5'Align'#7#5'alTop'#7'Caption'#6#17'ID '#209#129#208#186#209#128#208
+  +#184#208#191#209#130#208#176#11'ParentColor'#8#0#0#7'TDBEdit'#13'dbeJsScript'
+  +'Id'#4'Left'#2#1#6'Height'#2#25#3'Top'#2#18#5'Width'#3#224#2#9'DataField'#6#5
+  +'js_id'#10'DataSource'#7#12'dsJs_Element'#5'Align'#7#5'alTop'#9'MaxLength'#2
+  +#0#8'TabOrder'#2#1#0#0#7'TDBEdit'#13'dbeScriptPath'#4'Left'#2#1#6'Height'#2
+  +#25#3'Top'#2'<'#5'Width'#3#224#2#9'DataField'#6#7'js_path'#10'DataSource'#7
+  +#12'dsJs_Element'#5'Align'#7#5'alTop'#9'MaxLength'#2#0#8'TabOrder'#2#2#0#0#6
+  +'TLabel'#14'lbJsScriptPath'#4'Left'#2#1#6'Height'#2#17#3'Top'#2'+'#5'Width'#3
+  +#224#2#5'Align'#7#5'alTop'#7'Caption'#6'+'#208#159#209#131#209#130#209#140' '
+  +#208#178' '#209#132#208#176#208#185#208#187#208#190#208#178#208#190#208#185
+  +' '#209#129#208#184#209#129#209#130#208#181#208#188#208#181#11'ParentColor'#8
+  +#0#0#6'TLabel'#12'lbScriptFile'#4'Left'#2#1#6'Height'#2#17#3'Top'#2'U'#5'Wid'
+  +'th'#3#224#2#5'Align'#7#5'alTop'#7'Caption'#6#29#208#154#208#190#208#188#208
+  +#176#208#189#208#180#209#139' '#209#129#208#186#209#128#208#184#208#191#209
+  +#130#208#176#11'ParentColor'#8#0#0#7'TDBMemo'#15'dbmJsScriptFile'#4'Left'#2#1
+  +#6'Height'#3#128#1#3'Top'#2#127#5'Width'#3#224#2#5'Align'#7#8'alClient'#9'Da'
+  +'taField'#6#7'js_file'#10'DataSource'#7#12'dsJs_Element'#8'TabOrder'#2#3#0#0
+  +#7'TButton'#11'btnEditorJs'#4'Left'#2#1#6'Height'#2#25#3'Top'#2'f'#5'Width'#3
+  +#224#2#5'Align'#7#5'alTop'#7'Caption'#6#19#208#160#208#181#208#180#208#176
+  +#208#186#209#130#208#190#209#128'...'#8'TabOrder'#2#4#0#0#0#18'TSQLite3Conne'
+  +'ction'#4'conn'#9'Connected'#9#11'LoginPrompt'#8#12'DatabaseName'#6')/home/a'
+  +'rtem/STARTER_HTMLBUILDER/sqlite.db'#14'KeepConnection'#8#11'Transaction'#7#5
+  +'trans'#15'AlwaysUseBigint'#8#4'Left'#3#154#1#3'Top'#3#233#0#0#0#9'TSQLQuery'
+  +#13'sqlJs_Element'#9'FieldDefs'#14#0#8'Database'#7#4'conn'#11'Transaction'#7
+  +#5'trans'#6'Params'#14#0#6'Macros'#14#0#4'Left'#3#234#0#3'Top'#3#230#0#0#0#15
+  +'TSQLTransaction'#5'trans'#6'Active'#9#8'Database'#7#4'conn'#4'Left'#3#136#0
+  +#3'Top'#3#132#1#0#0#11'TDataSource'#12'dsJs_Element'#7'DataSet'#7#13'sqlJs_E'
+  +'lement'#4'Left'#2'b'#3'Top'#3#211#0#0#0#0
+]);

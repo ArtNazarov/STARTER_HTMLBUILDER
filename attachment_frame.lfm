@@ -1,0 +1,91 @@
+object frmAttachments: TfrmAttachments
+  Left = 0
+  Height = 386
+  Top = 0
+  Width = 709
+  ClientHeight = 386
+  ClientWidth = 709
+  TabOrder = 0
+  DesignLeft = 496
+  DesignTop = 139
+  object dbNav_Attachments: TDBNavigator
+    Left = 0
+    Height = 25
+    Top = 361
+    Width = 709
+    Align = alBottom
+    BevelOuter = bvNone
+    ChildSizing.EnlargeHorizontal = crsScaleChilds
+    ChildSizing.EnlargeVertical = crsScaleChilds
+    ChildSizing.ShrinkHorizontal = crsScaleChilds
+    ChildSizing.ShrinkVertical = crsScaleChilds
+    ChildSizing.Layout = cclLeftToRightThenTopToBottom
+    ChildSizing.ControlsPerLine = 100
+    ClientHeight = 25
+    ClientWidth = 709
+    DataSource = dsAttachments
+    Options = []
+    TabOrder = 0
+  end
+  object dbgAttachments: TDBGrid
+    Left = 0
+    Height = 361
+    Top = 0
+    Width = 709
+    Align = alClient
+    Color = clWindow
+    Columns = <>
+    DataSource = dsAttachments
+    PopupMenu = pmAttachments
+    TabOrder = 1
+  end
+  object dsAttachments: TDataSource
+    DataSet = sqlAttachments
+    Left = 32
+    Top = 104
+  end
+  object conn: TSQLite3Connection
+    Connected = True
+    LoginPrompt = False
+    DatabaseName = '/home/artem/STARTER_HTMLBUILDER/sqlite.db'
+    KeepConnection = True
+    Transaction = trans
+    AlwaysUseBigint = False
+    Left = 39
+    Top = 193
+  end
+  object trans: TSQLTransaction
+    Active = True
+    Database = conn
+    Left = 85
+    Top = 192
+  end
+  object sqlAttachments: TSQLQuery
+    FieldDefs = <>
+    Database = conn
+    Transaction = trans
+    SQL.Strings = (
+      'SELECT * FROM content'
+    )
+    Params = <>
+    Macros = <>
+    Left = 78
+    Top = 104
+  end
+  object pmAttachments: TPopupMenu
+    Left = 123
+    Top = 58
+    object mnuOpenAttachmentElement: TMenuItem
+      Caption = 'Открыть прикрепленный документ'
+      OnClick = acOpenAttachmentElementExecute
+    end
+  end
+  object aclAttachment: TActionList
+    Left = 258
+    Top = 63
+    object acOpenAttachmentElement: TAction
+      Caption = 'Открыть прикрепленный документ'
+      OnExecute = acOpenAttachmentElementExecute
+    end
+  end
+end

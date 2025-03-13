@@ -1,0 +1,25 @@
+{ This is an automatically generated lazarus resource file }
+
+LazarusResources.Add('TfrmMenu_Item','FORMDATA',[
+  'TPF0'#13'TfrmMenu_Item'#12'frmMenu_Item'#4'Left'#2#0#6'Height'#3#240#0#3'Top'
+  +#2#0#5'Width'#3'@'#1#12'ClientHeight'#3#240#0#11'ClientWidth'#3'@'#1#8'TabOr'
+  +'der'#2#0#10'DesignLeft'#3#179#1#9'DesignTop'#3#138#0#0#12'TDBNavigator'#14
+  +'dbNav_MenuItem'#4'Left'#2#0#6'Height'#2#25#3'Top'#3#215#0#5'Width'#3'@'#1#5
+  +'Align'#7#8'alBottom'#10'BevelOuter'#7#6'bvNone'#29'ChildSizing.EnlargeHoriz'
+  +'ontal'#7#14'crsScaleChilds'#27'ChildSizing.EnlargeVertical'#7#14'crsScaleCh'
+  +'ilds'#28'ChildSizing.ShrinkHorizontal'#7#14'crsScaleChilds'#26'ChildSizing.'
+  +'ShrinkVertical'#7#14'crsScaleChilds'#18'ChildSizing.Layout'#7#29'cclLeftToR'
+  +'ightThenTopToBottom'#27'ChildSizing.ControlsPerLine'#2'd'#12'ClientHeight'#2
+  +#25#11'ClientWidth'#3'@'#1#10'DataSource'#7#10'dsMenuItem'#7'Options'#11#0#8
+  +'TabOrder'#2#0#0#0#7'TDBGrid'#11'dbgMenuItem'#4'Left'#2#0#6'Height'#3#215#0#3
+  +'Top'#2#0#5'Width'#3'@'#1#5'Align'#7#8'alClient'#5'Color'#7#8'clWindow'#7'Co'
+  +'lumns'#14#0#10'DataSource'#7#10'dsMenuItem'#8'TabOrder'#2#1#0#0#11'TDataSou'
+  +'rce'#10'dsMenuItem'#7'DataSet'#7#11'sqlMenuItem'#4'Left'#2'M'#3'Top'#2'0'#0
+  +#0#18'TSQLite3Connection'#4'conn'#9'Connected'#9#11'LoginPrompt'#8#12'Databa'
+  +'seName'#6')/home/artem/STARTER_HTMLBUILDER/sqlite.db'#14'KeepConnection'#8
+  +#11'Transaction'#7#5'trans'#15'AlwaysUseBigint'#8#4'Left'#3#213#0#3'Top'#2')'
+  +#0#0#9'TSQLQuery'#11'sqlMenuItem'#9'FieldDefs'#14#0#8'Database'#7#4'conn'#11
+  +'Transaction'#7#5'trans'#6'Params'#14#0#6'Macros'#14#0#4'Left'#3#199#0#3'Top'
+  +#3#195#0#0#0#15'TSQLTransaction'#5'trans'#6'Active'#8#8'Database'#7#4'conn'#4
+  +'Left'#3'#'#1#3'Top'#2'1'#0#0#0
+]);

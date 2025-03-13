@@ -1,0 +1,176 @@
+object StarterHtmlBuilder: TStarterHtmlBuilder
+  Left = 366
+  Height = 509
+  Top = 180
+  Width = 877
+  Caption = 'StarterHtmlBuilder'
+  ClientHeight = 509
+  ClientWidth = 877
+  FormStyle = fsMDIForm
+  Menu = mnuMainMenu
+  OnCreate = FormCreate
+  LCLVersion = '3.8.0.0'
+  object btnTestContentElement: TButton
+    Left = 752
+    Height = 25
+    Top = 208
+    Width = 75
+    Caption = 'btnTestContentElement'
+    TabOrder = 0
+    OnClick = btnTestContentElementClick
+  end
+  object btnTestOtherMaterial: TButton
+    Left = 752
+    Height = 25
+    Top = 248
+    Width = 75
+    Caption = 'btnTestOtherMaterial'
+    TabOrder = 1
+    OnClick = btnTestOtherMaterialClick
+  end
+  object ActionList1: TActionList
+    Left = 56
+    Top = 80
+    object acSaveDatabase: TAction
+      Caption = 'Сохранить как ...'
+    end
+    object acOpenDatabase: TAction
+      Caption = 'Открыть базу данных...'
+      OnExecute = acOpenDatabaseExecute
+    end
+    object acOpenContentChild: TAction
+      Caption = 'Список страниц...'
+      OnExecute = acOpenContentChildExecute
+    end
+    object acOpenCssChild: TAction
+      Caption = 'Список Css'
+      OnExecute = acOpenCssChildExecute
+    end
+    object acOpenBlockChild: TAction
+      Caption = 'Блоки...'
+      OnExecute = acOpenBlockChildExecute
+    end
+    object acOpenSectionChild: TAction
+      Caption = 'Секции...'
+      OnExecute = acOpenSectionChildExecute
+    end
+    object acOpenPresetsChild: TAction
+      Caption = 'Пресеты...'
+      OnExecute = acOpenPresetsChildExecute
+    end
+    object acOpenTagsChild: TAction
+      Caption = 'Теги...'
+      OnExecute = acOpenTagsChildExecute
+    end
+    object acOpenTagsPagesChild: TAction
+      Caption = 'Теги-страницы...'
+      OnExecute = acOpenTagsPagesChildExecute
+    end
+    object acOpenAttachmentsChild: TAction
+      Caption = 'Вложения...'
+      OnExecute = acOpenAttachmentsChildExecute
+    end
+    object acOpenJsChild: TAction
+      Caption = 'Скрипты Javascript...'
+      OnExecute = acOpenJsChildExecute
+    end
+    object acOpenImagesChild: TAction
+      Caption = 'Изображения...'
+      OnExecute = acOpenImagesChildExecute
+    end
+    object acOpenMenuChild: TAction
+      Caption = 'Меню...'
+      OnExecute = acOpenMenuChildExecute
+    end
+    object acOpenMenuItemChild: TAction
+      Caption = 'Элементы меню...'
+      OnExecute = acOpenMenuItemChildExecute
+    end
+  end
+  object mnuMainMenu: TMainMenu
+    Left = 16
+    Top = 80
+    object mnuDatabase: TMenuItem
+      Caption = 'База данных'
+      object mnuSaveDatabase: TMenuItem
+        Action = acSaveDatabase
+      end
+      object mnuOpenDatabase: TMenuItem
+        Action = acOpenDatabase
+      end
+    end
+    object mnuSite: TMenuItem
+      Caption = 'Сайт'
+      object mnuOpenContentChild: TMenuItem
+        Caption = 'Страницы сайта'
+        OnClick = acOpenContentChildExecute
+      end
+      object mnuOpenCssChild: TMenuItem
+        Caption = 'Таблицы Css...'
+        OnClick = acOpenCssChildExecute
+      end
+      object mnuOpenBlockChild: TMenuItem
+        Action = acOpenBlockChild
+      end
+      object mnuOpenSectionChild: TMenuItem
+        Action = acOpenSectionChild
+      end
+      object mnuOpenPresetsChild: TMenuItem
+        Action = acOpenPresetsChild
+      end
+      object mnuOpenTagsChild: TMenuItem
+        Action = acOpenTagsChild
+      end
+      object mnuOpenTagsPagesChild: TMenuItem
+        Action = acOpenTagsPagesChild
+      end
+      object mnuOpenAttachmentsChild: TMenuItem
+        Action = acOpenAttachmentsChild
+      end
+      object mnuOpenJsChild: TMenuItem
+        Action = acOpenJsChild
+      end
+      object mnuOpenImagesChild: TMenuItem
+        Action = acOpenImagesChild
+      end
+      object mnuOpenMenuChild: TMenuItem
+        Action = acOpenMenuChild
+      end
+      object mnuOpenMenuItemChild: TMenuItem
+        Action = acOpenMenuItemChild
+      end
+    end
+  end
+  object OpenDialog1: TOpenDialog
+    Left = 16
+    Top = 40
+  end
+  object trans: TSQLTransaction
+    Active = False
+    Database = conn
+    Left = 16
+    Top = 8
+  end
+  object SaveDialog1: TSaveDialog
+    Left = 56
+    Top = 40
+  end
+  object conn: TSQLite3Connection
+    Connected = False
+    LoginPrompt = False
+    KeepConnection = False
+    Transaction = trans
+    AlwaysUseBigint = False
+    Left = 56
+    Top = 8
+  end
+  object temp_sql: TSQLQuery
+    FieldDefs = <>
+    Database = conn
+    Transaction = trans
+    Params = <>
+    Macros = <>
+    Left = 142
+    Top = 44
+  end
+end

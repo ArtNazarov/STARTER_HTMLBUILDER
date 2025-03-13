@@ -1,0 +1,56 @@
+{ This is an automatically generated lazarus resource file }
+
+LazarusResources.Add('TFrame3','FORMDATA',[
+  'TPF0'#7'TFrame3'#6'Frame3'#4'Left'#2#0#6'Height'#3'9'#2#3'Top'#2#0#5'Width'#3
+  +#206#3#12'ClientHeight'#3'9'#2#11'ClientWidth'#3#206#3#8'TabOrder'#2#0#10'De'
+  +'signLeft'#3#179#1#9'DesignTop'#3#138#0#0#6'TPanel'#7'Panel19'#4'Left'#2#0#6
+  +'Height'#3'9'#2#3'Top'#2#0#5'Width'#3#206#3#5'Align'#7#8'alClient'#12'Client'
+  +'Height'#3'9'#2#11'ClientWidth'#3#206#3#8'TabOrder'#2#0#0#6'TLabel'#7'Label1'
+  +'3'#4'Left'#2#1#6'Height'#2#17#3'Top'#2#1#5'Width'#3#204#3#5'Align'#7#5'alTo'
+  +'p'#7'Caption'#6#17'ID '#209#128#208#176#208#183#208#180#208#181#208#187#208
+  +#176#11'ParentColor'#8#0#0#7'TDBEdit'#12'dbeSectionId'#4'Left'#2#1#6'Height'
+  +#2#25#3'Top'#2#18#5'Width'#3#204#3#9'DataField'#6#2'id'#5'Align'#7#5'alTop'#9
+  +'MaxLength'#2#0#8'TabOrder'#2#0#0#0#6'TLabel'#7'Label14'#4'Left'#2#1#6'Heigh'
+  +'t'#2#17#3'Top'#2'+'#5'Width'#3#204#3#5'Align'#7#5'alTop'#7'Caption'#6#31#208
+  +#157#208#176#208#183#208#178#208#176#208#189#208#184#208#181' '#209#128#208
+  +#176#208#183#208#180#208#181#208#187#208#176#11'ParentColor'#8#0#0#7'TDBEdit'
+  +#17'dbeSectionCaption'#4'Left'#2#1#6'Height'#2#25#3'Top'#2'<'#5'Width'#3#204
+  +#3#9'DataField'#6#7'section'#5'Align'#7#5'alTop'#9'MaxLength'#2#0#8'TabOrder'
+  +#2#1#0#0#6'TLabel'#7'Label15'#4'Left'#2#1#6'Height'#2#17#3'Top'#3#152#0#5'Wi'
+  +'dth'#3#204#3#5'Align'#7#5'alTop'#7'Caption'#6'&'#208#159#209#128#208#184#208
+  +#188#208#181#209#135#208#176#208#189#208#184#209#143' '#208#186' '#209#128
+  +#208#176#208#183#208#180#208#181#208#187#209#131#11'ParentColor'#8#0#0#7'TDB'
+  +'Memo'#14'dbmSectionNote'#4'Left'#2#1#6'Height'#2'n'#3'Top'#3#169#0#5'Width'
+  +#3#204#3#5'Align'#7#5'alTop'#9'DataField'#6#4'note'#8'TabOrder'#2#2#0#0#6'TL'
+  +'abel'#7'Label16'#4'Left'#2#1#6'Height'#2#17#3'Top'#3#245#1#5'Width'#3#204#3
+  +#5'Align'#7#8'alBottom'#7'Caption'#6#12#208#159#209#128#208#181#209#129#208
+  +#181#209#130#11'ParentColor'#8#0#0#12'TDBNavigator'#14'dbNav_Sections'#4'Lef'
+  +'t'#2#1#6'Height'#2#25#3'Top'#3#6#2#5'Width'#3#204#3#5'Align'#7#8'alBottom'
+  +#10'BevelOuter'#7#6'bvNone'#29'ChildSizing.EnlargeHorizontal'#7#14'crsScaleC'
+  +'hilds'#27'ChildSizing.EnlargeVertical'#7#14'crsScaleChilds'#28'ChildSizing.'
+  +'ShrinkHorizontal'#7#14'crsScaleChilds'#26'ChildSizing.ShrinkVertical'#7#14
+  +'crsScaleChilds'#18'ChildSizing.Layout'#7#29'cclLeftToRightThenTopToBottom'
+  +#27'ChildSizing.ControlsPerLine'#2'd'#12'ClientHeight'#2#25#11'ClientWidth'#3
+  +#204#3#7'Options'#11#0#8'TabOrder'#2#3#0#0#17'TDBLookupComboBox'#12'choicePr'
+  +'eset'#4'Left'#2#1#6'Height'#2#25#3'Top'#3#31#2#5'Width'#3#204#3#5'Align'#7#8
+  +'alBottom'#9'DataField'#6#6'preset'#8'KeyField'#6#2'id'#9'ListField'#6#8'sit'
+  +'ename'#14'ListFieldIndex'#2#0#11'LookupCache'#8#8'TabOrder'#2#4#0#0#7'TDBMe'
+  +'mo'#18'dbmSectionFullText'#4'Left'#2#1#6'Height'#3#152#0#3'Top'#3']'#1#5'Wi'
+  +'dth'#3#204#3#5'Align'#7#8'alClient'#9'DataField'#6#9'full_text'#8'TabOrder'
+  +#2#5#0#0#6'TLabel'#15'lbSpecification'#4'Left'#2#1#6'Height'#2#17#3'Top'#3'0'
+  +#1#5'Width'#3#204#3#5'Align'#7#5'alTop'#7'Caption'#6#29#208#159#208#190#208
+  +#187#208#189#208#190#208#181' '#208#190#208#191#208#184#209#129#208#176#208
+  +#189#208#184#208#181#11'ParentColor'#8#0#0#7'TButton'#23'btnEditorForSection'
+  +'Note'#4'Left'#2#1#6'Height'#2#25#3'Top'#3#23#1#5'Width'#3#204#3#5'Align'#7#5
+  +'alTop'#8'TabOrder'#2#6#0#0#7'TButton'#27'btnEditorForSectionFullText'#4'Lef'
+  +'t'#2#1#6'Height'#2#28#3'Top'#3'A'#1#5'Width'#3#204#3#5'Align'#7#5'alTop'#8
+  +'TabOrder'#2#7#0#0#6'TLabel'#6'lbTree'#4'Left'#2#1#6'Height'#2#17#3'Top'#2'U'
+  +#5'Width'#3#204#3#5'Align'#7#5'alTop'#7'Caption'#6'$'#208#152#208#181#209#128
+  +#208#176#209#128#209#133#208#184#209#143' (section1/section2)'#11'ParentColo'
+  +'r'#8#0#0#7'TDBEdit'#7'dbeTree'#4'Left'#2#1#6'Height'#2#25#3'Top'#2'f'#5'Wid'
+  +'th'#3#204#3#9'DataField'#6#4'tree'#5'Align'#7#5'alTop'#9'MaxLength'#2#0#8'T'
+  +'abOrder'#2#8#0#0#7'TButton'#14'btnRefreshTree'#4'Left'#2#1#6'Height'#2#25#3
+  +'Top'#2#127#5'Width'#3#204#3#5'Align'#7#5'alTop'#7'Caption'#6'#'#208#159#208
+  +#181#209#128#208#181#209#129#209#130#209#128#208#190#208#184#209#130#209#140
+  +' '#208#180#208#181#209#128#208#181#208#178#208#190#8'TabOrder'#2#9#0#0#0#0
+]);

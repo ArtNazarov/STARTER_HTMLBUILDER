@@ -1,0 +1,25 @@
+{ This is an automatically generated lazarus resource file }
+
+LazarusResources.Add('TfrmMenu','FORMDATA',[
+  'TPF0'#8'TfrmMenu'#7'frmMenu'#4'Left'#2#0#6'Height'#3#130#1#3'Top'#2#0#5'Widt'
+  +'h'#3#197#2#12'ClientHeight'#3#130#1#11'ClientWidth'#3#197#2#8'TabOrder'#2#0
+  +#10'DesignLeft'#3#168#1#9'DesignTop'#3'1'#1#0#12'TDBNavigator'#10'dbNav_Menu'
+  +#4'Left'#2#0#6'Height'#2#25#3'Top'#3'i'#1#5'Width'#3#197#2#5'Align'#7#8'alBo'
+  +'ttom'#10'BevelOuter'#7#6'bvNone'#29'ChildSizing.EnlargeHorizontal'#7#14'crs'
+  +'ScaleChilds'#27'ChildSizing.EnlargeVertical'#7#14'crsScaleChilds'#28'ChildS'
+  +'izing.ShrinkHorizontal'#7#14'crsScaleChilds'#26'ChildSizing.ShrinkVertical'
+  +#7#14'crsScaleChilds'#18'ChildSizing.Layout'#7#29'cclLeftToRightThenTopToBot'
+  +'tom'#27'ChildSizing.ControlsPerLine'#2'd'#12'ClientHeight'#2#25#11'ClientWi'
+  +'dth'#3#197#2#10'DataSource'#7#6'dsMenu'#7'Options'#11#0#8'TabOrder'#2#0#0#0
+  +#7'TDBGrid'#7'dbgMenu'#4'Left'#2#0#6'Height'#3'i'#1#3'Top'#2#0#5'Width'#3#197
+  +#2#5'Align'#7#8'alClient'#5'Color'#7#8'clWindow'#7'Columns'#14#0#10'DataSour'
+  +'ce'#7#6'dsMenu'#8'TabOrder'#2#1#0#0#11'TDataSource'#6'dsMenu'#7'DataSet'#7#7
+  +'sqlMenu'#4'Left'#2' '#3'Top'#2'h'#0#0#18'TSQLite3Connection'#4'conn'#9'Conn'
+  +'ected'#9#11'LoginPrompt'#8#12'DatabaseName'#6')/home/artem/STARTER_HTMLBUIL'
+  +'DER/sqlite.db'#14'KeepConnection'#9#11'Transaction'#7#5'trans'#15'AlwaysUse'
+  +'Bigint'#8#4'Left'#2''''#3'Top'#3#193#0#0#0#15'TSQLTransaction'#5'trans'#6'A'
+  +'ctive'#9#8'Database'#7#4'conn'#4'Left'#2'U'#3'Top'#3#192#0#0#0#9'TSQLQuery'
+  +#7'sqlMenu'#9'FieldDefs'#14#0#8'Database'#7#4'conn'#11'Transaction'#7#5'tran'
+  +'s'#11'SQL.Strings'#1#6#21'SELECT * FROM content'#0#6'Params'#14#0#6'Macros'
+  +#14#0#4'Left'#2'N'#3'Top'#2'h'#0#0#0
+]);

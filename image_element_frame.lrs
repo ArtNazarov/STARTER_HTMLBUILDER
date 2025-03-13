@@ -1,0 +1,50 @@
+{ This is an automatically generated lazarus resource file }
+
+LazarusResources.Add('TfrmImage_Element','FORMDATA',[
+  'TPF0'#17'TfrmImage_Element'#16'frmImage_Element'#4'Left'#2#0#6'Height'#3#25#2
+  +#3'Top'#2#0#5'Width'#3'0'#3#12'ClientHeight'#3#25#2#11'ClientWidth'#3'0'#3#8
+  +'TabOrder'#2#0#10'DesignLeft'#3#179#1#9'DesignTop'#3#138#0#0#6'TPanel'#12'pa'
+  +'nImageView'#4'Left'#2#0#6'Height'#3#25#2#3'Top'#2#0#5'Width'#3'0'#3#5'Align'
+  +#7#8'alClient'#12'ClientHeight'#3#25#2#11'ClientWidth'#3'0'#3#8'TabOrder'#2#0
+  +#0#6'TLabel'#9'lbImageId'#4'Left'#2#1#6'Height'#2#17#3'Top'#2#1#5'Width'#3'.'
+  +#3#5'Align'#7#5'alTop'#7'Caption'#6#25'ID '#208#184#208#183#208#190#208#177
+  +#209#128#208#176#208#182#208#181#208#189#208#184#209#143#11'ParentColor'#8#0
+  +#0#7'TDBEdit'#10'dbeImageId'#4'Left'#2#1#6'Height'#2#25#3'Top'#2#18#5'Width'
+  +#3'.'#3#9'DataField'#6#8'image_id'#10'DataSource'#7#15'dsImage_Element'#5'Al'
+  +'ign'#7#5'alTop'#9'MaxLength'#2#0#8'TabOrder'#2#0#0#0#6'TLabel'#14'lbImageCa'
+  +'ption'#4'Left'#2#1#6'Height'#2#17#3'Top'#2'+'#5'Width'#3'.'#3#5'Align'#7#5
+  +'alTop'#7'Caption'#6''''#208#157#208#176#208#183#208#178#208#176#208#189#208
+  +#184#208#181' '#208#184#208#183#208#190#208#177#209#128#208#176#208#182#208
+  +#181#208#189#208#184#209#143#11'ParentColor'#8#0#0#7'TDBEdit'#15'dbeImageCap'
+  +'tion'#4'Left'#2#1#6'Height'#2#25#3'Top'#2'<'#5'Width'#3'.'#3#9'DataField'#6
+  +#13'image_caption'#10'DataSource'#7#15'dsImage_Element'#5'Align'#7#5'alTop'#9
+  +'MaxLength'#2#0#8'TabOrder'#2#1#0#0#6'TLabel'#11'lbImageData'#4'Left'#2#1#6
+  +'Height'#2#17#3'Top'#2'U'#5'Width'#3'.'#3#5'Align'#7#5'alTop'#7'Caption'#6#22
+  +#208#152#208#183#208#190#208#177#209#128#208#176#208#182#208#181#208#189#208
+  +#184#208#181#11'ParentColor'#8#0#0#12'TDBNavigator'#12'dbNav_Images'#4'Left'
+  +#2#1#6'Height'#2#25#3'Top'#3#255#1#5'Width'#3'.'#3#5'Align'#7#8'alBottom'#10
+  +'BevelOuter'#7#6'bvNone'#29'ChildSizing.EnlargeHorizontal'#7#14'crsScaleChil'
+  +'ds'#27'ChildSizing.EnlargeVertical'#7#14'crsScaleChilds'#28'ChildSizing.Shr'
+  +'inkHorizontal'#7#14'crsScaleChilds'#26'ChildSizing.ShrinkVertical'#7#14'crs'
+  +'ScaleChilds'#18'ChildSizing.Layout'#7#29'cclLeftToRightThenTopToBottom'#27
+  +'ChildSizing.ControlsPerLine'#2'd'#12'ClientHeight'#2#25#11'ClientWidth'#3'.'
+  +#3#10'DataSource'#7#15'dsImage_Element'#7'Options'#11#0#8'TabOrder'#2#2#0#0#6
+  +'TPanel'#15'panImageActions'#4'Left'#2#1#6'Height'#2'2'#3'Top'#3#205#1#5'Wid'
+  +'th'#3'.'#3#5'Align'#7#8'alBottom'#12'ClientHeight'#2'2'#11'ClientWidth'#3'.'
+  +#3#8'TabOrder'#2#3#0#7'TButton'#11'btnSetImage'#4'Left'#2#1#6'Height'#2'0'#3
+  +'Top'#2#1#5'Width'#3#239#0#5'Align'#7#6'alLeft'#7'Caption'#6'('#208#146#209
+  +#139#208#177#209#128#208#176#209#130#209#140' '#208#184#208#183#208#190#208
+  +#177#209#128#208#176#208#182#208#181#208#189#208#184#208#181'...'#8'TabOrder'
+  +#2#0#0#0#0#8'TDBImage'#7'dbImage'#4'Left'#2#1#6'Height'#3'g'#1#3'Top'#2'f'#5
+  +'Width'#3'.'#3#5'Align'#7#8'alClient'#8'AutoSize'#9#6'Center'#9#9'DataField'
+  +#6#10'image_data'#10'DataSource'#7#15'dsImage_Element'#12'Proportional'#9#7
+  +'Stretch'#9#0#0#0#11'TDataSource'#15'dsImage_Element'#7'DataSet'#7#16'sqlIma'
+  +'ge_Element'#4'Left'#3#144#1#3'Top'#3#214#1#0#0#9'TSQLQuery'#16'sqlImage_Ele'
+  +'ment'#9'FieldDefs'#14#0#8'Database'#7#4'conn'#11'Transaction'#7#5'trans'#6
+  +'Params'#14#0#6'Macros'#14#0#4'Left'#3#189#1#3'Top'#3#212#1#0#0#15'TSQLTrans'
+  +'action'#5'trans'#6'Active'#8#8'Database'#7#4'conn'#4'Left'#3#243#1#3'Top'#3
+  +#220#1#0#0#18'TSQLite3Connection'#4'conn'#9'Connected'#9#11'LoginPrompt'#8#12
+  +'DatabaseName'#6')/home/artem/STARTER_HTMLBUILDER/sqlite.db'#14'KeepConnecti'
+  +'on'#8#11'Transaction'#7#5'trans'#15'AlwaysUseBigint'#8#4'Left'#3'9'#2#3'Top'
+  +#3#225#1#0#0#0
+]);

@@ -1,0 +1,594 @@
+object frmContent_Element: TfrmContent_Element
+  Left = 0
+  Height = 535
+  Top = 0
+  Width = 850
+  ClientHeight = 535
+  ClientWidth = 850
+  TabOrder = 0
+  DesignLeft = 498
+  DesignTop = 247
+  object panPagePropsContainer: TPanel
+    Left = 0
+    Height = 535
+    Top = 0
+    Width = 850
+    Align = alClient
+    Caption = 'panPagePropsContainer'
+    ClientHeight = 535
+    ClientWidth = 850
+    TabOrder = 0
+    object PageControl4: TPageControl
+      Left = 1
+      Height = 533
+      Top = 1
+      Width = 848
+      ActivePage = tabMainProps
+      Align = alClient
+      TabIndex = 0
+      TabOrder = 0
+      object tabMainProps: TTabSheet
+        Caption = 'Главные свойства страницы'
+        ClientHeight = 502
+        ClientWidth = 844
+        object panPageMainProps: TPanel
+          Left = 0
+          Height = 502
+          Top = 0
+          Width = 844
+          Align = alClient
+          ClientHeight = 502
+          ClientWidth = 844
+          TabOrder = 0
+          object Label4: TLabel
+            Left = 1
+            Height = 17
+            Top = 1
+            Width = 842
+            Align = alTop
+            Caption = 'ID страницы'
+            ParentColor = False
+          end
+          object fID: TDBEdit
+            Left = 1
+            Height = 25
+            Top = 18
+            Width = 842
+            DataField = 'id'
+            DataSource = dsContent_Element
+            Align = alTop
+            MaxLength = 0
+            TabOrder = 0
+          end
+          object Label1: TLabel
+            Left = 1
+            Height = 17
+            Top = 43
+            Width = 842
+            Align = alTop
+            Caption = 'Заголовок страницы'
+            ParentColor = False
+          end
+          object fCaption: TDBEdit
+            Left = 1
+            Height = 25
+            Top = 60
+            Width = 842
+            DataField = 'caption'
+            DataSource = dsContent_Element
+            Align = alTop
+            MaxLength = 0
+            TabOrder = 1
+          end
+          object lbTagsOnPageTab: TLabel
+            Left = 1
+            Height = 17
+            Top = 192
+            Width = 842
+            Align = alTop
+            Caption = 'Теги материала'
+            ParentColor = False
+          end
+          object listTags: TListBox
+            Left = 1
+            Height = 200
+            Top = 209
+            Width = 842
+            Align = alClient
+            ItemHeight = 0
+            TabOrder = 2
+          end
+          object lbAttachTagToPage: TLabel
+            Left = 1
+            Height = 17
+            Top = 125
+            Width = 842
+            Align = alTop
+            Caption = 'Связать тег со статьей'
+            ParentColor = False
+          end
+          object dbSelectorTag: TDBLookupComboBox
+            Left = 1
+            Height = 25
+            Top = 167
+            Width = 842
+            Align = alTop
+            DataField = 'tag_id'
+            KeyField = 'tag_id'
+            ListField = 'tag_caption'
+            ListFieldIndex = 0
+            LookupCache = False
+            Sorted = True
+            TabOrder = 3
+          end
+          object btnAttachTagToMaterial: TButton
+            Left = 1
+            Height = 25
+            Top = 142
+            Width = 842
+            Align = alTop
+            Caption = 'Добавить тег к статье'
+            TabOrder = 4
+          end
+          object btnRemoveOneTag: TButton
+            Left = 1
+            Height = 25
+            Top = 409
+            Width = 842
+            Align = alBottom
+            Caption = 'Удалить выбранный тег'
+            TabOrder = 5
+          end
+          object btnRemoveAssocTag: TButton
+            Left = 1
+            Height = 25
+            Top = 434
+            Width = 842
+            Align = alBottom
+            Caption = 'Удалить связанные теги'
+            TabOrder = 6
+          end
+          object lbDt: TLabel
+            Left = 1
+            Height = 17
+            Top = 85
+            Width = 842
+            Align = alTop
+            Caption = 'Дата материала'
+            ParentColor = False
+          end
+          object DBDateTimePicker1: TDBDateTimePicker
+            Left = 1
+            Height = 23
+            Top = 102
+            Width = 842
+            DataField = 'dt'
+            DataSource = dsContent_Element
+            ReadOnly = False
+            CenturyFrom = 1941
+            MaxDate = 2958465
+            MinDate = -53780
+            TabOrder = 7
+            TrailingSeparator = False
+            TextForNullDate = 'NULL'
+            LeadingZeros = True
+            Align = alTop
+            Kind = dtkDateTime
+            TimeFormat = tf24
+            TimeDisplay = tdHMS
+            DateMode = dmComboBox
+            UseDefaultSeparators = True
+            HideDateTimeParts = []
+            MonthNames = 'Long'
+          end
+          object selSection: TDBLookupComboBox
+            Left = 1
+            Height = 25
+            Top = 476
+            Width = 842
+            Align = alBottom
+            DataField = 'section'
+            DataSource = dsContent_Element
+            KeyField = 'id'
+            ListField = 'section'
+            ListFieldIndex = 0
+            LookupCache = False
+            TabOrder = 8
+          end
+          object lbCategory: TLabel
+            Left = 1
+            Height = 17
+            Top = 459
+            Width = 842
+            Align = alBottom
+            Caption = 'ID категории'
+            ParentColor = False
+          end
+        end
+      end
+      object tabEditorProps: TTabSheet
+        Caption = 'Контент страницы'
+        ClientHeight = 502
+        ClientWidth = 844
+        object Panel6: TPanel
+          Left = 0
+          Height = 502
+          Top = 0
+          Width = 844
+          Align = alClient
+          Caption = 'panContentEditorPanel'
+          ClientHeight = 502
+          ClientWidth = 844
+          TabOrder = 0
+          object PageControl3: TPageControl
+            Left = 1
+            Height = 500
+            Top = 1
+            Width = 842
+            ActivePage = TabSheet11
+            Align = alClient
+            TabIndex = 0
+            TabOrder = 0
+            object TabSheet11: TTabSheet
+              Caption = 'Основной текст'
+              ClientHeight = 469
+              ClientWidth = 838
+              object Panel13: TPanel
+                Left = 0
+                Height = 469
+                Top = 0
+                Width = 838
+                Align = alClient
+                Caption = 'Panel13'
+                ClientHeight = 469
+                ClientWidth = 838
+                ParentColor = False
+                TabOrder = 0
+                object fContent: TDBMemo
+                  Left = 1
+                  Height = 433
+                  Top = 35
+                  Width = 836
+                  Align = alClient
+                  DataField = 'content'
+                  DataSource = dsContent_Element
+                  ScrollBars = ssAutoBoth
+                  TabOrder = 0
+                end
+                object Panel14: TPanel
+                  Left = 1
+                  Height = 34
+                  Top = 1
+                  Width = 836
+                  Align = alTop
+                  ClientHeight = 34
+                  ClientWidth = 836
+                  TabOrder = 1
+                  object btnEditorContent: TButton
+                    Left = 1
+                    Height = 32
+                    Top = 1
+                    Width = 75
+                    Align = alLeft
+                    Caption = 'В ОКНЕ'
+                    TabOrder = 0
+                  end
+                  object btnOpenWithWysiwyg: TButton
+                    Left = 76
+                    Height = 32
+                    Top = 1
+                    Width = 340
+                    Align = alLeft
+                    Caption = 'Открыть в визуальном редакторе...'
+                    TabOrder = 1
+                  end
+                  object btnLoadFromWysiwyg: TButton
+                    Left = 416
+                    Height = 32
+                    Top = 1
+                    Width = 416
+                    Align = alLeft
+                    Caption = 'Забрать из визуального редактора...'
+                    TabOrder = 2
+                  end
+                end
+              end
+            end
+            object TabSheet12: TTabSheet
+              Caption = 'Дополнительная информация'
+              ClientHeight = 469
+              ClientWidth = 838
+              object Panel15: TPanel
+                Left = 0
+                Height = 469
+                Top = 0
+                Width = 838
+                Align = alClient
+                ClientHeight = 469
+                ClientWidth = 838
+                ParentColor = False
+                TabOrder = 0
+                object Panel29: TPanel
+                  Left = 1
+                  Height = 467
+                  Top = 1
+                  Width = 836
+                  Align = alClient
+                  ClientHeight = 467
+                  ClientWidth = 836
+                  TabOrder = 0
+                  object DBText1: TDBText
+                    Left = 1
+                    Height = 17
+                    Top = 1
+                    Width = 834
+                    Align = alTop
+                    DataField = 'ufn1'
+                    ParentColor = False
+                  end
+                  object dbePageField1: TDBEdit
+                    Left = 1
+                    Height = 25
+                    Top = 18
+                    Width = 834
+                    DataField = 'uf1'
+                    DataSource = dsContent_Element
+                    Align = alTop
+                    MaxLength = 0
+                    TabOrder = 0
+                  end
+                  object DBText2: TDBText
+                    Left = 1
+                    Height = 17
+                    Top = 43
+                    Width = 834
+                    Align = alTop
+                    DataField = 'ufn2'
+                    ParentColor = False
+                  end
+                  object dbePageField2: TDBEdit
+                    Left = 1
+                    Height = 25
+                    Top = 60
+                    Width = 834
+                    DataField = 'uf2'
+                    DataSource = dsContent_Element
+                    Align = alTop
+                    MaxLength = 0
+                    TabOrder = 1
+                  end
+                  object DBText3: TDBText
+                    Left = 1
+                    Height = 17
+                    Top = 85
+                    Width = 834
+                    Align = alTop
+                    DataField = 'ufn3'
+                    ParentColor = False
+                  end
+                  object dbePageField3: TDBEdit
+                    Left = 1
+                    Height = 25
+                    Top = 102
+                    Width = 834
+                    DataField = 'uf3'
+                    DataSource = dsContent_Element
+                    Align = alTop
+                    MaxLength = 0
+                    TabOrder = 2
+                  end
+                  object DBText4: TDBText
+                    Left = 1
+                    Height = 17
+                    Top = 127
+                    Width = 834
+                    Align = alTop
+                    DataField = 'ufn4'
+                    ParentColor = False
+                  end
+                  object dbePageField4: TDBEdit
+                    Left = 1
+                    Height = 25
+                    Top = 144
+                    Width = 834
+                    DataField = 'uf4'
+                    DataSource = dsContent_Element
+                    Align = alTop
+                    MaxLength = 0
+                    TabOrder = 3
+                  end
+                  object DBText5: TDBText
+                    Left = 1
+                    Height = 17
+                    Top = 250
+                    Width = 834
+                    Align = alTop
+                    DataField = 'ufn5'
+                    ParentColor = False
+                  end
+                  object dbePageField5: TDBEdit
+                    Left = 1
+                    Height = 25
+                    Top = 267
+                    Width = 834
+                    DataField = 'uf5'
+                    DataSource = dsContent_Element
+                    Align = alTop
+                    MaxLength = 0
+                    TabOrder = 4
+                  end
+                  object DBText6: TDBText
+                    Left = 1
+                    Height = 17
+                    Top = 208
+                    Width = 834
+                    Align = alTop
+                    DataField = 'ufn6'
+                    ParentColor = False
+                  end
+                  object dbePageField6: TDBEdit
+                    Left = 1
+                    Height = 25
+                    Top = 225
+                    Width = 834
+                    DataField = 'uf6'
+                    DataSource = dsContent_Element
+                    Align = alTop
+                    MaxLength = 0
+                    TabOrder = 5
+                  end
+                  object DBText7: TDBText
+                    Left = 1
+                    Height = 17
+                    Top = 169
+                    Width = 834
+                    Align = alTop
+                    DataField = 'ufn7'
+                    ParentColor = False
+                  end
+                  object dbePageField7: TDBMemo
+                    Left = 1
+                    Height = 22
+                    Top = 186
+                    Width = 834
+                    Align = alTop
+                    DataField = 'uf7'
+                    DataSource = dsContent_Element
+                    TabOrder = 6
+                  end
+                end
+              end
+            end
+          end
+        end
+      end
+      object tabPreviewContent: TTabSheet
+        Caption = 'Предпросмотр разметки'
+        ClientHeight = 502
+        ClientWidth = 844
+        object IpHtmlPanel1: TIpHtmlPanel
+          Left = 0
+          Height = 502
+          Top = 0
+          Width = 844
+          Align = alClient
+          FixedTypeface = 'Courier'
+          DefaultTypeFace = 'default'
+          DefaultFontSize = 12
+          FlagErrors = False
+          PrintSettings.MarginLeft = 0.5
+          PrintSettings.MarginTop = 0.5
+          PrintSettings.MarginRight = 0.5
+          PrintSettings.MarginBottom = 0.5
+          PrintSettings.Preview.Left = 400
+          PrintSettings.Preview.Top = 225
+          PrintSettings.Preview.Width = 1200
+          PrintSettings.Preview.Height = 675
+          TabOrder = 0
+        end
+      end
+    end
+  end
+  object conn: TSQLite3Connection
+    Connected = True
+    LoginPrompt = False
+    DatabaseName = '/home/artem/STARTER_HTMLBUILDER/sqlite.db'
+    KeepConnection = False
+    Transaction = trans
+    AlwaysUseBigint = False
+    Left = 630
+  end
+  object sqlContent_Element: TSQLQuery
+    MaxIndexesCount = 4
+    FieldDefs = <    
+      item
+        Name = 'id'
+        DataType = ftFixedChar
+        Precision = -1
+        Size = 128
+      end    
+      item
+        Name = 'caption'
+        DataType = ftFixedChar
+        Precision = -1
+        Size = 128
+      end    
+      item
+        Name = 'content'
+        DataType = ftMemo
+        Precision = -1
+      end    
+      item
+        Name = 'section'
+        DataType = ftString
+        Precision = -1
+        Size = 128
+      end    
+      item
+        Name = 'dt'
+        DataType = ftDateTime
+        Precision = -1
+      end    
+      item
+        Name = 'uf1'
+        DataType = ftFixedChar
+        Precision = -1
+        Size = 60
+      end    
+      item
+        Name = 'uf2'
+        DataType = ftFixedChar
+        Precision = -1
+        Size = 60
+      end    
+      item
+        Name = 'uf3'
+        DataType = ftFixedChar
+        Precision = -1
+        Size = 60
+      end    
+      item
+        Name = 'uf4'
+        DataType = ftFixedChar
+        Precision = -1
+        Size = 60
+      end    
+      item
+        Name = 'uf5'
+        DataType = ftFixedChar
+        Precision = -1
+        Size = 60
+      end    
+      item
+        Name = 'uf6'
+        DataType = ftFixedChar
+        Precision = -1
+        Size = 60
+      end    
+      item
+        Name = 'uf7'
+        DataType = ftFixedChar
+        Precision = -1
+        Size = 60
+      end>
+    Database = conn
+    Transaction = trans
+    SQL.Strings = (
+      'SELECT * From content'
+    )
+    Params = <>
+    Macros = <>
+    Left = 708
+  end
+  object trans: TSQLTransaction
+    Active = True
+    Database = conn
+    Left = 676
+    Top = 1
+  end
+  object dsContent_Element: TDataSource
+    DataSet = sqlContent_Element
+    Left = 586
+    Top = 3
+  end
+end

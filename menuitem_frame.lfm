@@ -1,0 +1,71 @@
+object frmMenu_Item: TfrmMenu_Item
+  Left = 0
+  Height = 240
+  Top = 0
+  Width = 320
+  ClientHeight = 240
+  ClientWidth = 320
+  TabOrder = 0
+  DesignLeft = 435
+  DesignTop = 138
+  object dbNav_MenuItem: TDBNavigator
+    Left = 0
+    Height = 25
+    Top = 215
+    Width = 320
+    Align = alBottom
+    BevelOuter = bvNone
+    ChildSizing.EnlargeHorizontal = crsScaleChilds
+    ChildSizing.EnlargeVertical = crsScaleChilds
+    ChildSizing.ShrinkHorizontal = crsScaleChilds
+    ChildSizing.ShrinkVertical = crsScaleChilds
+    ChildSizing.Layout = cclLeftToRightThenTopToBottom
+    ChildSizing.ControlsPerLine = 100
+    ClientHeight = 25
+    ClientWidth = 320
+    DataSource = dsMenuItem
+    Options = []
+    TabOrder = 0
+  end
+  object dbgMenuItem: TDBGrid
+    Left = 0
+    Height = 215
+    Top = 0
+    Width = 320
+    Align = alClient
+    Color = clWindow
+    Columns = <>
+    DataSource = dsMenuItem
+    TabOrder = 1
+  end
+  object dsMenuItem: TDataSource
+    DataSet = sqlMenuItem
+    Left = 77
+    Top = 48
+  end
+  object conn: TSQLite3Connection
+    Connected = True
+    LoginPrompt = False
+    DatabaseName = '/home/artem/STARTER_HTMLBUILDER/sqlite.db'
+    KeepConnection = False
+    Transaction = trans
+    AlwaysUseBigint = False
+    Left = 213
+    Top = 41
+  end
+  object sqlMenuItem: TSQLQuery
+    FieldDefs = <>
+    Database = conn
+    Transaction = trans
+    Params = <>
+    Macros = <>
+    Left = 199
+    Top = 195
+  end
+  object trans: TSQLTransaction
+    Active = False
+    Database = conn
+    Left = 291
+    Top = 49
+  end
+end

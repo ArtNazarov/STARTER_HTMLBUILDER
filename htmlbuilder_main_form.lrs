@@ -1,0 +1,73 @@
+{ This is an automatically generated lazarus resource file }
+
+LazarusResources.Add('TStarterHtmlBuilder','FORMDATA',[
+  'TPF0'#19'TStarterHtmlBuilder'#18'StarterHtmlBuilder'#4'Left'#3'n'#1#6'Height'
+  +#3#253#1#3'Top'#3#180#0#5'Width'#3'm'#3#7'Caption'#6#18'StarterHtmlBuilder'
+  +#12'ClientHeight'#3#253#1#11'ClientWidth'#3'm'#3#9'FormStyle'#7#9'fsMDIForm'
+  +#4'Menu'#7#11'mnuMainMenu'#8'OnCreate'#7#10'FormCreate'#10'LCLVersion'#6#7'3'
+  +'.8.0.0'#0#7'TButton'#21'btnTestContentElement'#4'Left'#3#240#2#6'Height'#2
+  +#25#3'Top'#3#208#0#5'Width'#2'K'#7'Caption'#6#21'btnTestContentElement'#8'Ta'
+  +'bOrder'#2#0#7'OnClick'#7#26'btnTestContentElementClick'#0#0#7'TButton'#20'b'
+  +'tnTestOtherMaterial'#4'Left'#3#240#2#6'Height'#2#25#3'Top'#3#248#0#5'Width'
+  +#2'K'#7'Caption'#6#20'btnTestOtherMaterial'#8'TabOrder'#2#1#7'OnClick'#7#25
+  +'btnTestOtherMaterialClick'#0#0#11'TActionList'#11'ActionList1'#4'Left'#2'8'
+  +#3'Top'#2'P'#0#7'TAction'#14'acSaveDatabase'#7'Caption'#6#29#208#161#208#190
+  +#209#133#209#128#208#176#208#189#208#184#209#130#209#140' '#208#186#208#176
+  +#208#186' ...'#0#0#7'TAction'#14'acOpenDatabase'#7'Caption'#6''''#208#158#209
+  +#130#208#186#209#128#209#139#209#130#209#140' '#208#177#208#176#208#183#209
+  +#131' '#208#180#208#176#208#189#208#189#209#139#209#133'...'#9'OnExecute'#7
+  +#21'acOpenDatabaseExecute'#0#0#7'TAction'#18'acOpenContentChild'#7'Caption'#6
+  +#30#208#161#208#191#208#184#209#129#208#190#208#186' '#209#129#209#130#209
+  +#128#208#176#208#189#208#184#209#134'...'#9'OnExecute'#7#25'acOpenContentChi'
+  +'ldExecute'#0#0#7'TAction'#14'acOpenCssChild'#7'Caption'#6#16#208#161#208#191
+  +#208#184#209#129#208#190#208#186' Css'#9'OnExecute'#7#21'acOpenCssChildExecu'
+  +'te'#0#0#7'TAction'#16'acOpenBlockChild'#7'Caption'#6#13#208#145#208#187#208
+  +#190#208#186#208#184'...'#9'OnExecute'#7#23'acOpenBlockChildExecute'#0#0#7'T'
+  +'Action'#18'acOpenSectionChild'#7'Caption'#6#15#208#161#208#181#208#186#209
+  +#134#208#184#208#184'...'#9'OnExecute'#7#25'acOpenSectionChildExecute'#0#0#7
+  +'TAction'#18'acOpenPresetsChild'#7'Caption'#6#17#208#159#209#128#208#181#209
+  +#129#208#181#209#130#209#139'...'#9'OnExecute'#7#25'acOpenPresetsChildExecut'
+  +'e'#0#0#7'TAction'#15'acOpenTagsChild'#7'Caption'#6#11#208#162#208#181#208
+  +#179#208#184'...'#9'OnExecute'#7#22'acOpenTagsChildExecute'#0#0#7'TAction'#20
+  +'acOpenTagsPagesChild'#7'Caption'#6#28#208#162#208#181#208#179#208#184'-'#209
+  +#129#209#130#209#128#208#176#208#189#208#184#209#134#209#139'...'#9'OnExecut'
+  +'e'#7#27'acOpenTagsPagesChildExecute'#0#0#7'TAction'#22'acOpenAttachmentsChi'
+  +'ld'#7'Caption'#6#19#208#146#208#187#208#190#208#182#208#181#208#189#208#184
+  +#209#143'...'#9'OnExecute'#7#29'acOpenAttachmentsChildExecute'#0#0#7'TAction'
+  +#13'acOpenJsChild'#7'Caption'#6#28#208#161#208#186#209#128#208#184#208#191
+  +#209#130#209#139' Javascript...'#9'OnExecute'#7#20'acOpenJsChildExecute'#0#0
+  +#7'TAction'#17'acOpenImagesChild'#7'Caption'#6#25#208#152#208#183#208#190#208
+  +#177#209#128#208#176#208#182#208#181#208#189#208#184#209#143'...'#9'OnExecut'
+  +'e'#7#24'acOpenImagesChildExecute'#0#0#7'TAction'#15'acOpenMenuChild'#7'Capt'
+  +'ion'#6#11#208#156#208#181#208#189#209#142'...'#9'OnExecute'#7#22'acOpenMenu'
+  +'ChildExecute'#0#0#7'TAction'#19'acOpenMenuItemChild'#7'Caption'#6#28#208#173
+  +#208#187#208#181#208#188#208#181#208#189#209#130#209#139' '#208#188#208#181
+  +#208#189#209#142'...'#9'OnExecute'#7#26'acOpenMenuItemChildExecute'#0#0#0#9
+  +'TMainMenu'#11'mnuMainMenu'#4'Left'#2#16#3'Top'#2'P'#0#9'TMenuItem'#11'mnuDa'
+  +'tabase'#7'Caption'#6#21#208#145#208#176#208#183#208#176' '#208#180#208#176
+  +#208#189#208#189#209#139#209#133#0#9'TMenuItem'#15'mnuSaveDatabase'#6'Action'
+  +#7#14'acSaveDatabase'#0#0#9'TMenuItem'#15'mnuOpenDatabase'#6'Action'#7#14'ac'
+  +'OpenDatabase'#0#0#0#9'TMenuItem'#7'mnuSite'#7'Caption'#6#8#208#161#208#176
+  +#208#185#209#130#0#9'TMenuItem'#19'mnuOpenContentChild'#7'Caption'#6#27#208
+  +#161#209#130#209#128#208#176#208#189#208#184#209#134#209#139' '#209#129#208
+  +#176#208#185#209#130#208#176#7'OnClick'#7#25'acOpenContentChildExecute'#0#0#9
+  +'TMenuItem'#15'mnuOpenCssChild'#7'Caption'#6#21#208#162#208#176#208#177#208
+  +#187#208#184#209#134#209#139' Css...'#7'OnClick'#7#21'acOpenCssChildExecute'
+  +#0#0#9'TMenuItem'#17'mnuOpenBlockChild'#6'Action'#7#16'acOpenBlockChild'#0#0
+  +#9'TMenuItem'#19'mnuOpenSectionChild'#6'Action'#7#18'acOpenSectionChild'#0#0
+  +#9'TMenuItem'#19'mnuOpenPresetsChild'#6'Action'#7#18'acOpenPresetsChild'#0#0
+  +#9'TMenuItem'#16'mnuOpenTagsChild'#6'Action'#7#15'acOpenTagsChild'#0#0#9'TMe'
+  +'nuItem'#21'mnuOpenTagsPagesChild'#6'Action'#7#20'acOpenTagsPagesChild'#0#0#9
+  +'TMenuItem'#23'mnuOpenAttachmentsChild'#6'Action'#7#22'acOpenAttachmentsChil'
+  +'d'#0#0#9'TMenuItem'#14'mnuOpenJsChild'#6'Action'#7#13'acOpenJsChild'#0#0#9
+  +'TMenuItem'#18'mnuOpenImagesChild'#6'Action'#7#17'acOpenImagesChild'#0#0#9'T'
+  +'MenuItem'#16'mnuOpenMenuChild'#6'Action'#7#15'acOpenMenuChild'#0#0#9'TMenuI'
+  +'tem'#20'mnuOpenMenuItemChild'#6'Action'#7#19'acOpenMenuItemChild'#0#0#0#0#11
+  +'TOpenDialog'#11'OpenDialog1'#4'Left'#2#16#3'Top'#2'('#0#0#15'TSQLTransactio'
+  +'n'#5'trans'#6'Active'#8#8'Database'#7#4'conn'#4'Left'#2#16#3'Top'#2#8#0#0#11
+  ,'TSaveDialog'#11'SaveDialog1'#4'Left'#2'8'#3'Top'#2'('#0#0#18'TSQLite3Connec'
+  +'tion'#4'conn'#9'Connected'#8#11'LoginPrompt'#8#14'KeepConnection'#8#11'Tran'
+  +'saction'#7#5'trans'#15'AlwaysUseBigint'#8#4'Left'#2'8'#3'Top'#2#8#0#0#9'TSQ'
+  +'LQuery'#8'temp_sql'#9'FieldDefs'#14#0#8'Database'#7#4'conn'#11'Transaction'
+  +#7#5'trans'#6'Params'#14#0#6'Macros'#14#0#4'Left'#3#142#0#3'Top'#2','#0#0#0
+]);

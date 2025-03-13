@@ -1,0 +1,12 @@
+object FrameLoader: TFrameLoader
+  Left = 610
+  Height = 240
+  Top = 386
+  Width = 320
+  Caption = 'FrameLoader'
+  FormStyle = fsMDIChild
+  OnClose = FormClose
+  OnCloseQuery = FormCloseQuery
+  Position = poMainFormCenter
+  LCLVersion = '3.8.0.0'
+end

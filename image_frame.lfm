@@ -1,0 +1,90 @@
+object frmImages: TfrmImages
+  Left = 0
+  Height = 386
+  Top = 0
+  Width = 709
+  ClientHeight = 386
+  ClientWidth = 709
+  TabOrder = 0
+  DesignLeft = 424
+  DesignTop = 305
+  object dbNav_Images: TDBNavigator
+    Left = 0
+    Height = 25
+    Top = 361
+    Width = 709
+    Align = alBottom
+    BevelOuter = bvNone
+    ChildSizing.EnlargeHorizontal = crsScaleChilds
+    ChildSizing.EnlargeVertical = crsScaleChilds
+    ChildSizing.ShrinkHorizontal = crsScaleChilds
+    ChildSizing.ShrinkVertical = crsScaleChilds
+    ChildSizing.Layout = cclLeftToRightThenTopToBottom
+    ChildSizing.ControlsPerLine = 100
+    ClientHeight = 25
+    ClientWidth = 709
+    DataSource = dsImages
+    Options = []
+    TabOrder = 0
+  end
+  object dbgImages: TDBGrid
+    Left = 0
+    Height = 361
+    Top = 0
+    Width = 709
+    Align = alClient
+    Color = clWindow
+    Columns = <>
+    DataSource = dsImages
+    PopupMenu = pmImages
+    TabOrder = 1
+  end
+  object dsImages: TDataSource
+    DataSet = sqlImages
+    Left = 32
+    Top = 104
+  end
+  object conn: TSQLite3Connection
+    Connected = True
+    LoginPrompt = False
+    DatabaseName = '/home/artem/STARTER_HTMLBUILDER/sqlite.db'
+    KeepConnection = True
+    Transaction = trans
+    AlwaysUseBigint = False
+    Left = 39
+    Top = 193
+  end
+  object trans: TSQLTransaction
+    Active = True
+    Database = conn
+    Left = 85
+    Top = 192
+  end
+  object sqlImages: TSQLQuery
+    FieldDefs = <>
+    Database = conn
+    Transaction = trans
+    SQL.Strings = (
+      'SELECT * FROM content'
+    )
+    Params = <>
+    Macros = <>
+    Left = 78
+    Top = 104
+  end
+  object aclImages: TActionList
+    Left = 463
+    Top = 77
+    object acOpenImage_Element: TAction
+      Caption = 'Открыть изображение'
+      OnExecute = acOpenImage_ElementExecute
+    end
+  end
+  object pmImages: TPopupMenu
+    Left = 525
+    Top = 52
+    object mnuOpenImage_Element: TMenuItem
+      Action = acOpenImage_Element
+    end
+  end
+end

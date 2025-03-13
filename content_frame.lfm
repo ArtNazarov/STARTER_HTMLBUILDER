@@ -1,0 +1,90 @@
+object frmContent: TfrmContent
+  Left = 0
+  Height = 386
+  Top = 0
+  Width = 709
+  ClientHeight = 386
+  ClientWidth = 709
+  TabOrder = 0
+  DesignLeft = 424
+  DesignTop = 305
+  object dbNav_Content: TDBNavigator
+    Left = 0
+    Height = 25
+    Top = 361
+    Width = 709
+    Align = alBottom
+    BevelOuter = bvNone
+    ChildSizing.EnlargeHorizontal = crsScaleChilds
+    ChildSizing.EnlargeVertical = crsScaleChilds
+    ChildSizing.ShrinkHorizontal = crsScaleChilds
+    ChildSizing.ShrinkVertical = crsScaleChilds
+    ChildSizing.Layout = cclLeftToRightThenTopToBottom
+    ChildSizing.ControlsPerLine = 100
+    ClientHeight = 25
+    ClientWidth = 709
+    DataSource = dsContent
+    Options = []
+    TabOrder = 0
+  end
+  object DBGrid1: TDBGrid
+    Left = 0
+    Height = 361
+    Top = 0
+    Width = 709
+    Align = alClient
+    Color = clWindow
+    Columns = <>
+    DataSource = dsContent
+    PopupMenu = pmContents
+    TabOrder = 1
+  end
+  object dsContent: TDataSource
+    DataSet = sqlContent
+    Left = 32
+    Top = 104
+  end
+  object conn: TSQLite3Connection
+    Connected = True
+    LoginPrompt = False
+    DatabaseName = '/home/artem/STARTER_HTMLBUILDER/sqlite.db'
+    KeepConnection = True
+    Transaction = trans
+    AlwaysUseBigint = False
+    Left = 39
+    Top = 193
+  end
+  object trans: TSQLTransaction
+    Active = True
+    Database = conn
+    Left = 85
+    Top = 192
+  end
+  object sqlContent: TSQLQuery
+    FieldDefs = <>
+    Database = conn
+    Transaction = trans
+    SQL.Strings = (
+      'SELECT * FROM content'
+    )
+    Params = <>
+    Macros = <>
+    Left = 78
+    Top = 104
+  end
+  object pmContents: TPopupMenu
+    Left = 147
+    Top = 256
+    object mnuOpenContentElement: TMenuItem
+      Action = acOpenContentElement
+    end
+  end
+  object aclContents: TActionList
+    Left = 150
+    Top = 308
+    object acOpenContentElement: TAction
+      Caption = 'Открыть форму элемента страницы'
+      OnExecute = acOpenContentElementExecute
+    end
+  end
+end

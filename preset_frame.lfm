@@ -1,0 +1,71 @@
+object frmPreset: TfrmPreset
+  Left = 0
+  Height = 240
+  Top = 0
+  Width = 320
+  ClientHeight = 240
+  ClientWidth = 320
+  TabOrder = 0
+  DesignLeft = 646
+  DesignTop = 337
+  object dbNav_Preset: TDBNavigator
+    Left = 0
+    Height = 25
+    Top = 215
+    Width = 320
+    Align = alBottom
+    BevelOuter = bvNone
+    ChildSizing.EnlargeHorizontal = crsScaleChilds
+    ChildSizing.EnlargeVertical = crsScaleChilds
+    ChildSizing.ShrinkHorizontal = crsScaleChilds
+    ChildSizing.ShrinkVertical = crsScaleChilds
+    ChildSizing.Layout = cclLeftToRightThenTopToBottom
+    ChildSizing.ControlsPerLine = 100
+    ClientHeight = 25
+    ClientWidth = 320
+    DataSource = dsPreset
+    Options = []
+    TabOrder = 0
+  end
+  object dbgPreset: TDBGrid
+    Left = 0
+    Height = 215
+    Top = 0
+    Width = 320
+    Align = alClient
+    Color = clWindow
+    Columns = <>
+    DataSource = dsPreset
+    TabOrder = 1
+  end
+  object sqlPreset: TSQLQuery
+    FieldDefs = <>
+    Database = conn
+    Transaction = trans
+    Params = <>
+    Macros = <>
+    Left = 85
+    Top = 85
+  end
+  object conn: TSQLite3Connection
+    Connected = True
+    LoginPrompt = False
+    DatabaseName = '/home/artem/STARTER_HTMLBUILDER/sqlite.db'
+    KeepConnection = False
+    Transaction = trans
+    AlwaysUseBigint = False
+    Left = 146
+    Top = 85
+  end
+  object dsPreset: TDataSource
+    DataSet = sqlPreset
+    Left = 85
+    Top = 40
+  end
+  object trans: TSQLTransaction
+    Active = False
+    Database = conn
+    Left = 149
+    Top = 40
+  end
+end

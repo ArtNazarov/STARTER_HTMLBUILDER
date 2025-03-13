@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectOptions>
+    <Version Value="12"/>
+    <General>
+      <SessionStorage Value="InProjectDir"/>
+      <AutoCreateForms Value="False"/>
+      <Title Value="starter_htmlbuilder"/>
+      <Scaled Value="True"/>
+      <Icon Value="0"/>
+    </General>
+    <BuildModes>
+      <Item Name="default" Default="True"/>
+    </BuildModes>
+    <PublishOptions>
+      <Version Value="2"/>
+      <UseFileFilters Value="True"/>
+    </PublishOptions>
+    <RunParams>
+      <FormatVersion Value="2"/>
+    </RunParams>
+    <RequiredPackages>
+      <Item>
+        <PackageName Value="TurboPowerIPro"/>
+      </Item>
+      <Item>
+        <PackageName Value="FCL"/>
+      </Item>
+      <Item>
+        <PackageName Value="SQLDBLaz"/>
+      </Item>
+      <Item>
+        <PackageName Value="DateTimeCtrlsDsgn"/>
+      </Item>
+      <Item>
+        <PackageName Value="DateTimeCtrls"/>
+      </Item>
+      <Item>
+        <PackageName Value="SynEditDsgn"/>
+      </Item>
+      <Item>
+        <PackageName Value="SynEdit"/>
+      </Item>
+      <Item>
+        <PackageName Value="LCL"/>
+      </Item>
+    </RequiredPackages>
+    <Units>
+      <Unit>
+        <Filename Value="starter_htmlbuilder.lpr"/>
+        <IsPartOfProject Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="htmlbuilder_main_form.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="StarterHtmlBuilder"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit>
+      <Unit>
+        <Filename Value="child_dialog.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FrameLoader"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit>
+      <Unit>
+        <Filename Value="css_frame.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmCss"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Frame"/>
+      </Unit>
+      <Unit>
+        <Filename Value="preset_frame.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmPreset"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Frame"/>
+      </Unit>
+      <Unit>
+        <Filename Value="menuitem_frame.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmMenu_Item"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Frame"/>
+      </Unit>
+      <Unit>
+        <Filename Value="content_element_frame.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmContent_Element"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Frame"/>
+      </Unit>
+      <Unit>
+        <Filename Value="section_element_frame.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Frame3"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Frame"/>
+      </Unit>
+      <Unit>
+        <Filename Value="tag_element_frame.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Frame4"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Frame"/>
+      </Unit>
+      <Unit>
+        <Filename Value="tagpage_element_frame.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Frame5"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Frame"/>
+      </Unit>
+      <Unit>
+        <Filename Value="block_element_frame.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmBlock_Element"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Frame"/>
+      </Unit>
+      <Unit>
+        <Filename Value="css_element_frame.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmCss_Element"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Frame"/>
+      </Unit>
+      <Unit>
+        <Filename Value="js_element_frame.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmJs_Element"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Frame"/>
+      </Unit>
+      <Unit>
+        <Filename Value="image_element_frame.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmImage_Element"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Frame"/>
+      </Unit>
+      <Unit>
+        <Filename Value="attachment_element_frame.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmAttachment_Element"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Frame"/>
+      </Unit>
+      <Unit>
+        <Filename Value="mdi_helpers.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="block_frame.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmBlocks"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Frame"/>
+      </Unit>
+    </Units>
+  </ProjectOptions>
+  <CompilerOptions>
+    <Version Value="11"/>
+    <SearchPaths>
+      <IncludeFiles Value="$(ProjOutDir)"/>
+    </SearchPaths>
+    <Parsing>
+      <SyntaxOptions>
+        <UseAnsiStrings Value="False"/>
+      </SyntaxOptions>
+    </Parsing>
+    <Linking>
+      <Debugging>
+        <DebugInfoType Value="dsDwarf3"/>
+      </Debugging>
+    </Linking>
+    <Other>
+      <CustomOptions Value="-Fr/usr/lib64/fpc/msg/errore.msg"/>
+    </Other>
+  </CompilerOptions>
+  <Debugging>
+    <Exceptions>
+      <Item>
+        <Name Value="EAbort"/>
+      </Item>
+      <Item>
+        <Name Value="ECodetoolError"/>
+      </Item>
+      <Item>
+        <Name Value="EFOpenError"/>
+      </Item>
+    </Exceptions>
+  </Debugging>
+</CONFIG>

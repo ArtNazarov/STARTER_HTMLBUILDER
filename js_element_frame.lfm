@@ -1,0 +1,139 @@
+object frmJs_Element: TfrmJs_Element
+  Left = 0
+  Height = 537
+  Top = 0
+  Width = 738
+  ClientHeight = 537
+  ClientWidth = 738
+  TabOrder = 0
+  DesignLeft = 373
+  DesignTop = 164
+  object panJsProps: TPanel
+    Left = 0
+    Height = 537
+    Top = 0
+    Width = 738
+    Align = alClient
+    Caption = 'panJsProps'
+    ClientHeight = 537
+    ClientWidth = 738
+    TabOrder = 0
+    object dbNav_JsScripts: TDBNavigator
+      Left = 1
+      Height = 25
+      Top = 511
+      Width = 736
+      Align = alBottom
+      BevelOuter = bvNone
+      ChildSizing.EnlargeHorizontal = crsScaleChilds
+      ChildSizing.EnlargeVertical = crsScaleChilds
+      ChildSizing.ShrinkHorizontal = crsScaleChilds
+      ChildSizing.ShrinkVertical = crsScaleChilds
+      ChildSizing.Layout = cclLeftToRightThenTopToBottom
+      ChildSizing.ControlsPerLine = 100
+      ClientHeight = 25
+      ClientWidth = 736
+      DataSource = dsJs_Element
+      Options = []
+      TabOrder = 0
+    end
+    object lbJsScriptId: TLabel
+      Left = 1
+      Height = 17
+      Top = 1
+      Width = 736
+      Align = alTop
+      Caption = 'ID скрипта'
+      ParentColor = False
+    end
+    object dbeJsScriptId: TDBEdit
+      Left = 1
+      Height = 25
+      Top = 18
+      Width = 736
+      DataField = 'js_id'
+      DataSource = dsJs_Element
+      Align = alTop
+      MaxLength = 0
+      TabOrder = 1
+    end
+    object dbeScriptPath: TDBEdit
+      Left = 1
+      Height = 25
+      Top = 60
+      Width = 736
+      DataField = 'js_path'
+      DataSource = dsJs_Element
+      Align = alTop
+      MaxLength = 0
+      TabOrder = 2
+    end
+    object lbJsScriptPath: TLabel
+      Left = 1
+      Height = 17
+      Top = 43
+      Width = 736
+      Align = alTop
+      Caption = 'Путь в файловой системе'
+      ParentColor = False
+    end
+    object lbScriptFile: TLabel
+      Left = 1
+      Height = 17
+      Top = 85
+      Width = 736
+      Align = alTop
+      Caption = 'Команды скрипта'
+      ParentColor = False
+    end
+    object dbmJsScriptFile: TDBMemo
+      Left = 1
+      Height = 384
+      Top = 127
+      Width = 736
+      Align = alClient
+      DataField = 'js_file'
+      DataSource = dsJs_Element
+      TabOrder = 3
+    end
+    object btnEditorJs: TButton
+      Left = 1
+      Height = 25
+      Top = 102
+      Width = 736
+      Align = alTop
+      Caption = 'Редактор...'
+      TabOrder = 4
+    end
+  end
+  object conn: TSQLite3Connection
+    Connected = True
+    LoginPrompt = False
+    DatabaseName = '/home/artem/STARTER_HTMLBUILDER/sqlite.db'
+    KeepConnection = False
+    Transaction = trans
+    AlwaysUseBigint = False
+    Left = 410
+    Top = 233
+  end
+  object sqlJs_Element: TSQLQuery
+    FieldDefs = <>
+    Database = conn
+    Transaction = trans
+    Params = <>
+    Macros = <>
+    Left = 234
+    Top = 230
+  end
+  object trans: TSQLTransaction
+    Active = True
+    Database = conn
+    Left = 136
+    Top = 388
+  end
+  object dsJs_Element: TDataSource
+    DataSet = sqlJs_Element
+    Left = 98
+    Top = 211
+  end
+end

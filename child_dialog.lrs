@@ -1,0 +1,8 @@
+{ This is an automatically generated lazarus resource file }
+
+LazarusResources.Add('TFrameLoader','FORMDATA',[
+  'TPF0'#12'TFrameLoader'#11'FrameLoader'#4'Left'#3'b'#2#6'Height'#3#240#0#3'To'
+  +'p'#3#130#1#5'Width'#3'@'#1#7'Caption'#6#11'FrameLoader'#9'FormStyle'#7#10'f'
+  +'sMDIChild'#7'OnClose'#7#9'FormClose'#12'OnCloseQuery'#7#14'FormCloseQuery'#8
+  +'Position'#7#16'poMainFormCenter'#10'LCLVersion'#6#7'3.8.0.0'#0#0
+]);
