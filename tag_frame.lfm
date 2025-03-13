@@ -36,6 +36,7 @@ object frmTags: TfrmTags
     Color = clWindow
     Columns = <>
     DataSource = dsTags
+    PopupMenu = pmTags
     TabOrder = 1
   end
   object dsTags: TDataSource
@@ -71,5 +72,20 @@ object frmTags: TfrmTags
     Macros = <>
     Left = 78
     Top = 104
+  end
+  object pmTags: TPopupMenu
+    Left = 258
+    Top = 117
+    object mnuOpenTag_Element: TMenuItem
+      Action = acOpenTag_Element
+    end
+  end
+  object aclTags: TActionList
+    Left = 338
+    Top = 99
+    object acOpenTag_Element: TAction
+      Caption = 'Открыть тег'
+      OnExecute = acOpenTag_ElementExecute
+    end
   end
 end

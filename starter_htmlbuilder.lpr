@@ -16,7 +16,7 @@ uses
   block_element_frame,
 css_element_frame, js_element_frame, 
 image_element_frame, 
-attachment_element_frame
+attachment_element_frame, imdichildframe
     { you can add units after this };
 
   {$R *.res}

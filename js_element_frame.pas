@@ -6,13 +6,14 @@ interface
 
 uses
   Classes, SysUtils, SQLite3Conn, SQLDB, DB, LResources, Forms, Controls,
-  ExtCtrls, StdCtrls, DBCtrls;
+  ExtCtrls, StdCtrls, DBCtrls,
+  imdichildframe;
 
 type
 
   { TfrmJs_Element }
 
-  TfrmJs_Element = class(TFrame)
+  TfrmJs_Element = class(TFrame, IMDI_Child_Frame)
     btnEditorJs: TButton;
     dsJs_Element: TDataSource;
     dbeJsScriptId: TDBEdit;

@@ -13,7 +13,7 @@ uses
   js_frame, image_frame,  menu_frame, menuitem_frame,
   content_element_frame, attachment_frame,
   css_element_frame, image_element_frame,
-  js_element_frame,
+  js_element_frame,  tag_element_frame,
   SQLite3Conn, SQLDB, db_helpers ;
 
 type
@@ -87,6 +87,7 @@ var
   frmCss_Element : TfrmCss_Element; // фрейм с одним стилем
   frmImage_Element : TfrmImage_Element; // фрейм с одним изображением
   frmJs_Element : TfrmJs_Element; // фрейм с одним скриптом
+  frmTag_Element : TfrmTag_Element; // фрейм с одним тегом
 
 
 begin
@@ -372,6 +373,24 @@ begin
     frmJs_Element.sqlJs_Element);
     frmJs_Element.sqlJs_Element.Active := True;
     frmJs_Element.dsJs_Element.AutoEdit := True;
+
+  end;
+
+
+
+                          { 19 Окно для тега }
+  if strTypeOfFrame = 'tag_element' then
+  begin
+    ShowMessage('tag_element='+id_of_element);
+    frmTag_Element := TfrmTag_Element.Create(Self);
+    frmTag_Element.Parent := Self;
+    frmTag_Element.Align := alClient;
+    frmTag_Element.conn.DatabaseName := DatabaseName;
+    frmTag_Element.setFileName(DatabaseName);
+    open_sql('select * from tags where tag_id="' +id_of_element+ '"',
+    frmTag_Element.sqlTag_Element);
+    frmTag_Element.sqlTag_Element.Active := True;
+    frmTag_Element.dsTag_Element.AutoEdit := True;
 
   end;
 
