@@ -16,6 +16,10 @@ Implemented: forms with a table part for a list of elements and forms for one re
 
 From the table editing window, by calling the context menu with the right mouse button, a window for editing a single element opens
 
+## screenshot
+
+![MDI UI](https://dl.dropbox.com/scl/fi/zjqo20j07b18cw7to5846/starter_htmlbuilder_mdi.png?rlkey=s94fa3ie6bxher9hmdn9rs06l&st=sjaeho3y)
+
 ## notes
 
 Does not contain site generation functions and other functionality, some controls are dead (without event handlers)
